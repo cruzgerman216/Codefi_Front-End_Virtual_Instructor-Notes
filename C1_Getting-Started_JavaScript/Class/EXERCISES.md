@@ -1,0 +1,18 @@
+# Getting Started w/ JavaScript (Class 1)
+
+## Exercise #1
+
+**Aim**: Create a new project (with only an HTML file) that uses JavaScript to change the color of a Heading element.
+
+- [ ] Create new folder with HTML file
+- [ ] Add a Heading Element with text inside
+- [ ] Create a Script tag at the bottom of the page
+- [ ] Write the logic to select a heading and change it's color
+
+---
+
+---
+
+## Exercise #2
+
+**Aim**: Create a new project (with an HTML and JavaScript) that uses JavaScript to change the color of a Heading element on button click.
