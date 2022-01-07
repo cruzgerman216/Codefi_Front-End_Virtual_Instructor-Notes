@@ -18,9 +18,9 @@ By the end of this lesson, you will be able to:
 
 ### CONCEPTS
 
-- **JavaScript:** _JavaScript_ is one of the core programming languages of the Web. Over 97% of websites use JavaScript to add interactivity and functionality to their page. JavaScript can be used to build interactive websites, mobile-apps, backend API’s, desktop applications, and even for machine learning!
+- **JavaScript:** _JavaScript_ is one of the core programming languages of the Web. Over 97% of websites use JavaScript to add interactivity and functionality to their page. You can use JavaScript to build interactive websites, mobile apps, backend APIs, desktop applications, and even machine learning projects!
 
-- **DevTools:** _DevTools_ are the tools built directly into the browser which provide developers the ability to diagnose problems quickly, check network performance, write simple scripts, inspect the webpage, and more.
+- **DevTools:** _DevTools_ are the tools built directly into the browser, providing developers the ability to diagnose problems quickly, check network performance, write simple scripts, inspect the web page, and more.
 
 ---
 
@@ -52,7 +52,7 @@ By the end of this lesson, you will be able to:
 
 - [ ] Open up the Chrome Developer Tools
 
-  - Walkthrough the different tabs and give brief overview on their function
+  - Walkthrough the different tabs and give a brief overview of their function
 
 🔻
 
@@ -60,7 +60,7 @@ By the end of this lesson, you will be able to:
 
 - [ ] Change Google Search button text
 
-  - Use the element selector and click on the word "Goolge Search"
+  - Use the element selector and click on the word "Google Search"
   - Change the input value to "Bing Search"
   - Change the input background-color to "red"
 
@@ -81,7 +81,7 @@ By the end of this lesson, you will be able to:
 
 - Make the background a different color
 - Change the navbar links
-- Try to create a new variable and place it in on the page
+- Try to create a new variable and place it on the page
 - Be creative and explore
 
 ---
@@ -231,7 +231,7 @@ By the end of this lesson, you will be able to:
 
   - Create a new JavaScript file in the main folder titled `main.js`
   - Copy the code inside the script and paste it into the file
-  - Add a `src` property on the `<script>` tag and link it to the file we just created.
+  - Add an `src` property on the `<script>` tag and link it to the file we just created.
 
 ```jsx
 // Selects the first <h1> element
@@ -284,7 +284,7 @@ Specifically, we learned how to:
 
 - Better understand the role and function of JavaScript in Web Development
 - How to run JavaScript code in the Dev Tools, HTML file, and as a dedicated JS file
-- Change the background color of the body on click of a button
+- Change the background color of the body with a click of a button
 
 ---
 
