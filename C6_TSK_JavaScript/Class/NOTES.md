@@ -1,6 +1,6 @@
-# TSK
+# JavaScript Essential Concepts
 
-[TSK Link to Course Content](tsk)
+[Class 6 Course Content](https://www.better.dev/ecmascript-vs-javascript)
 
 ## Preparation
 
@@ -8,9 +8,10 @@
 
 By the end of this lesson, you will be able to:
 
-1. **TSK**
-2. **TSK**
-3. **TSK**
+1. **Understand the History of JavaScript**
+2. **Confidently Declare Variables**
+3. **Use JavaScript Scope Properly**
+4. **Apply Hoisting Correctly in a JS Project**
 
 ![TSK finished project](../Resources/TSK)
 
@@ -18,9 +19,13 @@ By the end of this lesson, you will be able to:
 
 ### CONCEPTS
 
-- **TSK:** _TSK_ is tsk
+- **ECMAScript:** _ECMAScript_ is tsk
 
-- **TSK:** _TSK_ is tsk
+- **Variable:** A _variable_ is tsk
+
+- **Scope:** _Scope_ in programmer is tsk
+
+- **Hoisting:** _Hoisting_ is tsk
 
 ---
 
@@ -28,7 +33,7 @@ By the end of this lesson, you will be able to:
 
 ## Walkthrough
 
-### STEP 1: TSK
+### STEP 1: DECLARING VARIABLES
 
 **Aim**: TSK
 
@@ -90,7 +95,7 @@ By the end of this lesson, you will be able to:
 
 ---
 
-### STEP 2: TSK
+### STEP 2: SCOPE
 
 **Aim**: TSK
 
@@ -152,7 +157,7 @@ By the end of this lesson, you will be able to:
 
 ---
 
-### STEP 3: TSK
+### STEP 3: HOISTING
 
 **Aim**: TSK
 

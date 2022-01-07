@@ -16,7 +16,7 @@
 
 ---
 
-## LocalStorage
+## Local Storage
 
 1.
 

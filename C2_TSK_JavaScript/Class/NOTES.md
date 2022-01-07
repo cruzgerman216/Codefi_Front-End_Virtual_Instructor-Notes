@@ -1,6 +1,6 @@
-# TSK
+# JavaScript Foundations - Part 1
 
-[TSK Link to Course Content](tsk)
+[Class 2 Course Content](https://www.better.dev/javascript-types-and-variables)
 
 ## Preparation
 
@@ -8,9 +8,10 @@
 
 By the end of this lesson, you will be able to:
 
-1. **TSK**
-2. **TSK**
-3. **TSK**
+1. **Declare variables and understand common data types**
+2. **Use JS Operators**
+3. **Create comparisons between variables**
+4. **Create conditional flows and loops**
 
 ![TSK finished project](../Resources/TSK)
 
@@ -18,9 +19,11 @@ By the end of this lesson, you will be able to:
 
 ### CONCEPTS
 
-- **TSK:** _TSK_ is tsk
+- **Data Types:** _Data types_ are tsk
 
-- **TSK:** _TSK_ is tsk
+- **Operators:** _Operators_ are tsk
+
+- **Conditional Statement:** _Conditional Statements_ are tsk
 
 ---
 
@@ -28,7 +31,7 @@ By the end of this lesson, you will be able to:
 
 ## Walkthrough
 
-### STEP 1: TSK
+### STEP 1: TYPES & VARIABLES
 
 **Aim**: TSK
 
@@ -90,7 +93,7 @@ By the end of this lesson, you will be able to:
 
 ---
 
-### STEP 2: TSK
+### STEP 2: OPERATORS
 
 **Aim**: TSK
 
@@ -152,7 +155,69 @@ By the end of this lesson, you will be able to:
 
 ---
 
-### STEP 3: TSK
+### STEP 3: COMPARISONS
+
+**Aim**: TSK
+
+| _TSK_ |
+
+- [ ] TSK
+
+```jsx
+
+```
+
+🔻
+
+- [ ] TSK
+
+```jsx
+
+```
+
+🔻
+
+| _TSK_ |
+
+- [ ] TSK
+
+```jsx
+// TSK
+```
+
+🔻
+
+- [ ] TSK
+
+```jsx
+// TSK
+```
+
+🔻
+
+- [ ] TSK
+
+```jsx
+// TSK
+```
+
+🔻
+
+- [ ] TSK
+
+```jsx
+// TSK
+```
+
+🔻
+
+**Check**: TSK
+
+- TSK
+
+---
+
+### STEP 4: CONDITIONALS. FLOWS, LOOPS
 
 **Aim**: TSK
 

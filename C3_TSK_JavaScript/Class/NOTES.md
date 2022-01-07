@@ -1,6 +1,6 @@
-# TSK
+# JavaScript Foundations - Part 2
 
-[TSK Link to Course Content](tsk)
+[Class 3 Course Content](https://www.better.dev/javascript-functions)
 
 ## Preparation
 
@@ -8,9 +8,9 @@
 
 By the end of this lesson, you will be able to:
 
-1. **TSK**
-2. **TSK**
-3. **TSK**
+1. **Create JS Functions**
+2. **Create JS Objects**
+3. **Grasp Common JS Built-in Objects & Methods**
 
 ![TSK finished project](../Resources/TSK)
 
@@ -18,9 +18,9 @@ By the end of this lesson, you will be able to:
 
 ### CONCEPTS
 
-- **TSK:** _TSK_ is tsk
+- **Function:** A _function_ is tsk
 
-- **TSK:** _TSK_ is tsk
+- **Object:** An _object_ is tsk
 
 ---
 

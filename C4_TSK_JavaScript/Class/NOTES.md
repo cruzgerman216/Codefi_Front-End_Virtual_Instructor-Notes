@@ -1,6 +1,6 @@
-# TSK
+# Building Real Things
 
-[TSK Link to Course Content](tsk)
+[Class 4 Course Content](https://www.better.dev/javascript-dom-and-dom-events)
 
 ## Preparation
 
@@ -8,9 +8,11 @@
 
 By the end of this lesson, you will be able to:
 
-1. **TSK**
-2. **TSK**
-3. **TSK**
+1. **Use and Manipulate the DOM**
+2. **Create a JavaScript Accordion Menu**
+3. **Code a JavaScript Progress Bar**
+4. **Make a JS Stopwatch**
+5. **Build a Pricing Calculator**
 
 ![TSK finished project](../Resources/TSK)
 
@@ -28,7 +30,7 @@ By the end of this lesson, you will be able to:
 
 ## Walkthrough
 
-### STEP 1: TSK
+### STEP 1: DOM & DOM EVENTS
 
 **Aim**: TSK
 
@@ -90,7 +92,7 @@ By the end of this lesson, you will be able to:
 
 ---
 
-### STEP 2: TSK
+### STEP 2: PRICING CALCULATOR
 
 **Aim**: TSK
 
@@ -152,7 +154,193 @@ By the end of this lesson, you will be able to:
 
 ---
 
-### STEP 3: TSK
+### STEP 3: CRAZY BUTTONS
+
+**Aim**: TSK
+
+| _TSK_ |
+
+- [ ] TSK
+
+```jsx
+
+```
+
+🔻
+
+- [ ] TSK
+
+```jsx
+
+```
+
+🔻
+
+| _TSK_ |
+
+- [ ] TSK
+
+```jsx
+// TSK
+```
+
+🔻
+
+- [ ] TSK
+
+```jsx
+// TSK
+```
+
+🔻
+
+- [ ] TSK
+
+```jsx
+// TSK
+```
+
+🔻
+
+- [ ] TSK
+
+```jsx
+// TSK
+```
+
+🔻
+
+**Check**: TSK
+
+- TSK
+
+---
+
+### STEP 4: STOPWATCH
+
+**Aim**: TSK
+
+| _TSK_ |
+
+- [ ] TSK
+
+```jsx
+
+```
+
+🔻
+
+- [ ] TSK
+
+```jsx
+
+```
+
+🔻
+
+| _TSK_ |
+
+- [ ] TSK
+
+```jsx
+// TSK
+```
+
+🔻
+
+- [ ] TSK
+
+```jsx
+// TSK
+```
+
+🔻
+
+- [ ] TSK
+
+```jsx
+// TSK
+```
+
+🔻
+
+- [ ] TSK
+
+```jsx
+// TSK
+```
+
+🔻
+
+**Check**: TSK
+
+- TSK
+
+---
+
+### STEP 5: ACCORDION
+
+**Aim**: TSK
+
+| _TSK_ |
+
+- [ ] TSK
+
+```jsx
+
+```
+
+🔻
+
+- [ ] TSK
+
+```jsx
+
+```
+
+🔻
+
+| _TSK_ |
+
+- [ ] TSK
+
+```jsx
+// TSK
+```
+
+🔻
+
+- [ ] TSK
+
+```jsx
+// TSK
+```
+
+🔻
+
+- [ ] TSK
+
+```jsx
+// TSK
+```
+
+🔻
+
+- [ ] TSK
+
+```jsx
+// TSK
+```
+
+🔻
+
+**Check**: TSK
+
+- TSK
+
+---
+
+### STEP 6: SCROLLING PROGRESS
 
 **Aim**: TSK
 
