@@ -1,1 +1,2 @@
-- [] Put Finshed Projects in Class 1 Part 1 Notes.
+- [ ] Put Finshed Projects in Class 1 Part 1 Notes.
+- [ ] Create PDF's

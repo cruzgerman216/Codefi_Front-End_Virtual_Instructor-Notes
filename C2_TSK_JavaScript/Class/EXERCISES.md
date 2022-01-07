@@ -13,3 +13,5 @@
 ## Exercise #2
 
 **Aim**: TSK
+
+- [ ] TSK
