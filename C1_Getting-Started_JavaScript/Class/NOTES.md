@@ -1,5 +1,7 @@
 # Getting Started with JavaScript
 
+[Class 1 Content](https://www.better.dev/welcome-to-getting-started-with-javascript)
+
 ## Preparation
 
 ### GOALS
