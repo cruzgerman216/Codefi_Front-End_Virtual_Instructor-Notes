@@ -37,7 +37,7 @@ By the end of this lesson, you will be able to:
 
 | _TSK_ |
 
-- [ ] TSK
+- [ ] **TSK**
 
 ```jsx
 
@@ -45,7 +45,7 @@ By the end of this lesson, you will be able to:
 
 🔻
 
-- [ ] TSK
+- [ ] **TSK**
 
 ```jsx
 
@@ -55,7 +55,7 @@ By the end of this lesson, you will be able to:
 
 | _TSK_ |
 
-- [ ] TSK
+- [ ] **TSK**
 
 ```jsx
 // TSK
@@ -63,7 +63,7 @@ By the end of this lesson, you will be able to:
 
 🔻
 
-- [ ] TSK
+- [ ] **TSK**
 
 ```jsx
 // TSK
@@ -71,7 +71,7 @@ By the end of this lesson, you will be able to:
 
 🔻
 
-- [ ] TSK
+- [ ] **TSK**
 
 ```jsx
 // TSK
@@ -79,7 +79,7 @@ By the end of this lesson, you will be able to:
 
 🔻
 
-- [ ] TSK
+- [ ] **TSK**
 
 ```jsx
 // TSK
@@ -99,7 +99,7 @@ By the end of this lesson, you will be able to:
 
 | _TSK_ |
 
-- [ ] TSK
+- [ ] **TSK**
 
 ```jsx
 
@@ -107,7 +107,7 @@ By the end of this lesson, you will be able to:
 
 🔻
 
-- [ ] TSK
+- [ ] **TSK**
 
 ```jsx
 
@@ -117,7 +117,7 @@ By the end of this lesson, you will be able to:
 
 | _TSK_ |
 
-- [ ] TSK
+- [ ] **TSK**
 
 ```jsx
 // TSK
@@ -125,7 +125,7 @@ By the end of this lesson, you will be able to:
 
 🔻
 
-- [ ] TSK
+- [ ] **TSK**
 
 ```jsx
 // TSK
@@ -133,7 +133,7 @@ By the end of this lesson, you will be able to:
 
 🔻
 
-- [ ] TSK
+- [ ] **TSK**
 
 ```jsx
 // TSK
@@ -141,7 +141,7 @@ By the end of this lesson, you will be able to:
 
 🔻
 
-- [ ] TSK
+- [ ] **TSK**
 
 ```jsx
 // TSK
@@ -161,7 +161,7 @@ By the end of this lesson, you will be able to:
 
 | _TSK_ |
 
-- [ ] TSK
+- [ ] **TSK**
 
 ```jsx
 
@@ -169,7 +169,7 @@ By the end of this lesson, you will be able to:
 
 🔻
 
-- [ ] TSK
+- [ ] **TSK**
 
 ```jsx
 
@@ -179,7 +179,7 @@ By the end of this lesson, you will be able to:
 
 | _TSK_ |
 
-- [ ] TSK
+- [ ] **TSK**
 
 ```jsx
 // TSK
@@ -187,7 +187,7 @@ By the end of this lesson, you will be able to:
 
 🔻
 
-- [ ] TSK
+- [ ] **TSK**
 
 ```jsx
 // TSK
@@ -195,7 +195,7 @@ By the end of this lesson, you will be able to:
 
 🔻
 
-- [ ] TSK
+- [ ] **TSK**
 
 ```jsx
 // TSK
@@ -203,7 +203,7 @@ By the end of this lesson, you will be able to:
 
 🔻
 
-- [ ] TSK
+- [ ] **TSK**
 
 ```jsx
 // TSK
@@ -223,7 +223,7 @@ By the end of this lesson, you will be able to:
 
 | _TSK_ |
 
-- [ ] TSK
+- [ ] **TSK**
 
 ```jsx
 
@@ -231,7 +231,7 @@ By the end of this lesson, you will be able to:
 
 🔻
 
-- [ ] TSK
+- [ ] **TSK**
 
 ```jsx
 
@@ -241,7 +241,7 @@ By the end of this lesson, you will be able to:
 
 | _TSK_ |
 
-- [ ] TSK
+- [ ] **TSK**
 
 ```jsx
 // TSK
@@ -249,7 +249,7 @@ By the end of this lesson, you will be able to:
 
 🔻
 
-- [ ] TSK
+- [ ] **TSK**
 
 ```jsx
 // TSK
@@ -257,7 +257,7 @@ By the end of this lesson, you will be able to:
 
 🔻
 
-- [ ] TSK
+- [ ] **TSK**
 
 ```jsx
 // TSK
@@ -265,7 +265,7 @@ By the end of this lesson, you will be able to:
 
 🔻
 
-- [ ] TSK
+- [ ] **TSK**
 
 ```jsx
 // TSK

@@ -36,9 +36,9 @@ By the end of this lesson, you will be able to:
 
 | _https://codefi-bootcamp-projects.netlify.com_ |
 
-- [ ] Walkthrough Project 1
-- [ ] Walkthrough Project 2
-- [ ] Walkthrough Project 3
+- [ ] **Walkthrough Project 1**
+- [ ] **Walkthrough Project 2**
+- [ ] **Walkthrough Project 3**
 
 ---
 
@@ -50,7 +50,7 @@ By the end of this lesson, you will be able to:
 
 | _https://www.google.com_ |
 
-- [ ] Open up the Chrome Developer Tools
+- [ ] **Open up the Chrome Developer Tools**
 
   - Walkthrough the different tabs and give a brief overview of their function
 
@@ -58,7 +58,7 @@ By the end of this lesson, you will be able to:
 
 | _Dev Tools Elements Tab_ |
 
-- [ ] Change Google Search button text
+- [ ] **Change Google Search button text**
 
   - Use the element selector and click on the word "Google Search"
   - Change the input value to "Bing Search"
@@ -68,7 +68,7 @@ By the end of this lesson, you will be able to:
 
 | _Dev Tools Console Tab_ |
 
-- [ ] Create a variable that stores the value of an expression
+- [ ] **Create a variable that stores the value of an expression**
 
   ```jsx
   const myVariable = 2 * 4;
@@ -90,9 +90,11 @@ By the end of this lesson, you will be able to:
 
 **Aim**: Create a “Hello World” App using JavaScript
 
+🔻
+
 | _~Starter Code/index.html_ |
 
-- [ ] Create HTML Boilerplate Code
+- [ ] **Create HTML Boilerplate Code**
 
   - Fill out the Title
   - Add Comments for Metadata, main content, and Javascript
@@ -124,7 +126,7 @@ By the end of this lesson, you will be able to:
 
 🔻
 
-- [ ] Add the Main HTML Content
+- [ ] **Add the Main HTML Content**
 
   - Create a `<section><section>` element with a class of "container"
   - Create an `<h1></h1>` element inside the `<section><section>` tags
@@ -147,7 +149,7 @@ By the end of this lesson, you will be able to:
 
 | _Chrome DevTools Console Tab_ |
 
-- [ ] Alter the Heading's Content & Color
+- [ ] **Alter the Heading's Content & Color**
 
   - Create a new variable `const myHeading` and set it equal to the first `<h1>` tag using `querySelector()`
   - Use the `.innerText` property on the `myHeading` variable to change the text content to "JavaScript Hello World"
@@ -166,7 +168,7 @@ By the end of this lesson, you will be able to:
 
 🔻
 
-- [ ] Move the JavaScript Code to the HTML File
+- [ ] **Move the JavaScript Code to the HTML File**
 
   - Add `<script></script>` tags at the bottom of the `<body></body>` in the HTML file
   - Inside the script tag, create a variable that represents the `<h1></h1>` on the document by selecting the tag
@@ -192,7 +194,7 @@ By the end of this lesson, you will be able to:
 
 🔻
 
-- [ ] Change the Background on Button Click Event
+- [ ] **Change the Background on Button Click Event**
 
   - As an attribute on the HTML `<button></button>` tag, create an `onclick="changeBackground()"` function call
   - Inside the script tag, create yet another variable that represents the `<body></body>` on the document by selecting the tag
@@ -227,7 +229,7 @@ By the end of this lesson, you will be able to:
 
 🔻
 
-- [ ] Move the JavaScript Code a Dedicated File
+- [ ] **Move the JavaScript Code a Dedicated File**
 
   - Create a new JavaScript file in the main folder titled `main.js`
   - Copy the code inside the script and paste it into the file

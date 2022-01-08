@@ -39,7 +39,7 @@ By the end of this lesson, you will be able to:
 
 | _TSK_ |
 
-- [ ] TSK
+- [ ] **TSK**
 
 ```jsx
 
@@ -47,7 +47,7 @@ By the end of this lesson, you will be able to:
 
 🔻
 
-- [ ] TSK
+- [ ] **TSK**
 
 ```jsx
 
@@ -57,7 +57,7 @@ By the end of this lesson, you will be able to:
 
 | _TSK_ |
 
-- [ ] TSK
+- [ ] **TSK**
 
 ```jsx
 // TSK
@@ -65,7 +65,7 @@ By the end of this lesson, you will be able to:
 
 🔻
 
-- [ ] TSK
+- [ ] **TSK**
 
 ```jsx
 // TSK
@@ -73,7 +73,7 @@ By the end of this lesson, you will be able to:
 
 🔻
 
-- [ ] TSK
+- [ ] **TSK**
 
 ```jsx
 // TSK
@@ -81,7 +81,7 @@ By the end of this lesson, you will be able to:
 
 🔻
 
-- [ ] TSK
+- [ ] **TSK**
 
 ```jsx
 // TSK
@@ -101,7 +101,7 @@ By the end of this lesson, you will be able to:
 
 | _TSK_ |
 
-- [ ] TSK
+- [ ] **TSK**
 
 ```jsx
 
@@ -109,7 +109,7 @@ By the end of this lesson, you will be able to:
 
 🔻
 
-- [ ] TSK
+- [ ] **TSK**
 
 ```jsx
 
@@ -119,7 +119,7 @@ By the end of this lesson, you will be able to:
 
 | _TSK_ |
 
-- [ ] TSK
+- [ ] **TSK**
 
 ```jsx
 // TSK
@@ -127,7 +127,7 @@ By the end of this lesson, you will be able to:
 
 🔻
 
-- [ ] TSK
+- [ ] **TSK**
 
 ```jsx
 // TSK
@@ -135,7 +135,7 @@ By the end of this lesson, you will be able to:
 
 🔻
 
-- [ ] TSK
+- [ ] **TSK**
 
 ```jsx
 // TSK
@@ -143,7 +143,7 @@ By the end of this lesson, you will be able to:
 
 🔻
 
-- [ ] TSK
+- [ ] **TSK**
 
 ```jsx
 // TSK
@@ -163,7 +163,7 @@ By the end of this lesson, you will be able to:
 
 | _TSK_ |
 
-- [ ] TSK
+- [ ] **TSK**
 
 ```jsx
 
@@ -171,7 +171,7 @@ By the end of this lesson, you will be able to:
 
 🔻
 
-- [ ] TSK
+- [ ] **TSK**
 
 ```jsx
 
@@ -181,7 +181,7 @@ By the end of this lesson, you will be able to:
 
 | _TSK_ |
 
-- [ ] TSK
+- [ ] **TSK**
 
 ```jsx
 // TSK
@@ -189,7 +189,7 @@ By the end of this lesson, you will be able to:
 
 🔻
 
-- [ ] TSK
+- [ ] **TSK**
 
 ```jsx
 // TSK
@@ -197,7 +197,7 @@ By the end of this lesson, you will be able to:
 
 🔻
 
-- [ ] TSK
+- [ ] **TSK**
 
 ```jsx
 // TSK
@@ -205,7 +205,7 @@ By the end of this lesson, you will be able to:
 
 🔻
 
-- [ ] TSK
+- [ ] **TSK**
 
 ```jsx
 // TSK
@@ -247,7 +247,7 @@ Specifically, we learned how to:
 
 [TSK _(Video)_](tsk)
 
-[TSK _(Article)_](tsk)
+[TSK _(Repository)_](https://github.com/ryanmcdermott/clean-code-javascript)
 
 ---
 
