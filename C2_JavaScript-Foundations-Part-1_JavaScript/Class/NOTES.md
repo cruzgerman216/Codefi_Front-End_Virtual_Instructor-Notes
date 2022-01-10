@@ -425,61 +425,131 @@ console.groupEnd();
 
 **Aim**: Comprehend the various ways in JavaScript to create conditionals and loops.
 
-| _TSK_ |
-
-- [ ] **TSK**
+| _./conditionals_flows_loops.js_ |
 
 ```jsx
+const username = "CodeCoachWill";
+const password = 12345;
+const users = [
+  {
+    username: "CodeCoachWill",
+    password: 12345,
+    isInstructor: true,
+  },
+  {
+    username: "CodeCoachBill",
+    password: "lkjsf#jlksjf$@A",
+    isInstructor: true,
+  },
+  {
+    username: "Student 1",
+    password: "ilikedogs",
+    isInstructor: false,
+  },
+  {
+    username: "Student 2",
+    password: "ilikecats",
+    isInstructor: false,
+  },
+];
+```
 
+- [ ] **Walkthrough JavaScript "If" Statements**
+  - The code inside the `{}` braces only runs if the expression is truthy
+  - You can use `else if (expression)` to check for a second scenario
+  - You can use `else {}` to catch any case when none of the `if ()` statements return true
+  - All operators and comparisons are valid inside an "if" statement
+
+```jsx
+// * "if" statement *
+if (username === "CodeCoachWill") {
+  console.log("CodeCoachWill is Logged In!");
+} else if (username === "CodeCoachBill") {
+  console.log("CodeCoachBill is Logged In!");
+} else {
+  console.log("Invalid Credentials");
+}
+
+if (username === "CodeCoachWill" || username === "CodeCoachBill") {
+  console.log("A Code Coach has logged in");
+}
+
+if (username === "CodeCoachWill" && password === 12345) {
+  console.log("You have successfully logged in using name and password");
+}
 ```
 
 🔻
 
-- [ ] **TSK**
+- [ ] **Walkthrough JavaScript "for" Loop**
+  - In the first expression, set `i` equal to whatever index you want to start at
+  - The second expression indicates when you want to stop running the loop
+  - The third statement is how you control how to increase the iterator variable
 
 ```jsx
+// * "for" loop *
+console.groupCollapsed("For Loop");
 
+for (let i = 0; i < users.length; i++) {
+  console.log("=====NEW ITERATION======");
+  console.log("index:", i);
+  console.log("user:", users[i]);
+  console.log("username:", users[i].username);
+}
+
+console.groupEnd();
 ```
 
 🔻
 
-| _TSK_ |
-
-- [ ] **TSK**
+- [ ] **Walkthrough JavaScript "while" Loop**
+  - Create an iterator or index variable
+  - Loop over "while" a condition continues to be true
+  - IMPORTANT: ensure you are going to reach the base case to the statement by either incrementing or decrementing a variable... otherwise you will create an endless loop and crash your browser / computer
 
 ```jsx
-// TSK
+// * "while" loop *
+console.groupCollapsed("While Loop");
+
+let i = 0;
+while (i < users.length) {
+  console.log("=====NEW ITERATION======");
+  console.log("index:", i);
+  console.log("user:", users[i]);
+  console.log("username:", users[i].username);
+
+  i++;
+}
+
+console.groupEnd();
 ```
 
 🔻
 
-- [ ] **TSK**
+- [ ] **Walkthrough JavaScript "for...of" Loop**
+  - Simpler syntax for looping over arrays
+  - You don't have access to the index
 
 ```jsx
-// TSK
-```
+// * "for...of" loop *
+console.groupCollapsed("For Of Loop");
 
-🔻
+for (let user of users) {
+  console.log("=====NEW ITERATION======");
+  console.log("user:", user);
+  console.log("username:", user.username);
+}
 
-- [ ] **TSK**
-
-```jsx
-// TSK
-```
-
-🔻
-
-- [ ] **TSK**
-
-```jsx
-// TSK
+console.groupEnd();
 ```
 
 🔻
 
 **Check**: Assess your understanding of JavaScript conditionals, flows, and loops
 
-- TSK
+- What is an "if" statement?
+- How would you iterate over every item in an array of unknown length?
+- How do you protect agains infinite loops?
 
 ---
 
@@ -497,21 +567,18 @@ Learning to code is a journey, and you are taking the necessary steps to improve
 
 _Good on you!_
 
-Specifically, we learned how to:
+Specifically, we learned more about:
 
-- TSK
-- TSK
-- TSK
+- Variable and the different types JavaScript offers
+- JS Operators and how they work
+- Comparing two statements, expressions, and variables together
+- Creating conditional flows and looping over arrays
 
 ---
 
 ### RESOURCES
 
-[TSK _(Tool)_](tsk)
-
-[TSK _(Video)_](tsk)
-
-[TSK _(Article)_](tsk)
+[JavaScript - Reference vs Primitive Values/ Types _(Video)_](https://www.youtube.com/watch?v=9ooYYRLdg_g&ab_channel=Academind)
 
 ---
 
