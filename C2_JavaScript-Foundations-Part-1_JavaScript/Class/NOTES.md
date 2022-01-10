@@ -13,17 +13,26 @@ By the end of this lesson, you will be able to:
 3. **Create comparisons between variables**
 4. **Create conditional flows and loops**
 
-![TSK finished project](../Resources/TSK)
+![Class 2 Finished Product Terminal Window](../Resources/C2_Finished-Project.png)
 
 ---
 
 ### CONCEPTS
 
-- **Data Types:** _Data types_ are tsk
+- **Data Types:** _Data types_ are a classification that specifies which _type_ of value a variable has and what type of mathemataical, relational, or logical operations can be applied to it (without causing an error).
 
-- **Operators:** _Operators_ are tsk
+- **Operators:** _Operators_ are objects that are capable of manipulating or evaluating an expression. Common operators include, but are not limited to:
 
-- **Conditional Statement:** _Conditional Statements_ are tsk
+  - \+
+  - \-
+  - \
+  - \*
+  - \>
+  - <
+  - ===
+  - !==
+
+- **Conditional Statement:** _Conditional Statements_ are a programming expression or command that instructs a computer to run code if a specified statement is truthy or not.
 
 ---
 
@@ -33,193 +42,388 @@ By the end of this lesson, you will be able to:
 
 ### STEP 1: TYPES & VARIABLES
 
-**Aim**: TSK
+**Aim**: Comprehend the various JavaScript variables and variable types.
 
-| _TSK_ |
+| _./types_and_variables.js_ |
 
-- [ ] **TSK**
+- [ ] **Walkthrough JavaScript Strings**
+  - Double quotes are valid
+  - Single quotes are valid
+  - Numbers in quotes are of type strings
 
 ```jsx
-
+// * string * \\
+"Anything wrapped in quotes is a string";
+"They can be double quotes or single quotes";
+"2";
 ```
 
 🔻
 
-- [ ] **TSK**
+- [ ] **Walkthrough JavaScript Numbers**
+  - All numbers are floating point (decimals)
 
 ```jsx
-
+// * number * \\
+1; // 1.0
+10.0;
+13.9;
 ```
 
 🔻
 
-| _TSK_ |
-
-- [ ] **TSK**
+- [ ] **Walkthrough JavaScript Booleans**
+  - Two options "true" or "false"
+  - Values and variables can be "truthy" or "falsy"
 
 ```jsx
-// TSK
+// * boolean * \\
+true;
+false;
+// "some text" => truthy
+// "" => falsy
 ```
 
 🔻
 
-- [ ] **TSK**
+- [ ] **Walkthrough JavaScript Specials**
+  - Variables without a value are by default "_undefined_" and can be explicitly set to have no value by setting them to "_null_"
+  - "_NaN_" is a globally scoped variable used for comparisons to see if a value is a number or not
 
 ```jsx
-// TSK
+// * special * \\
+undefined;
+null;
+NaN;
 ```
 
 🔻
 
-- [ ] **TSK**
+- [ ] **Walkthrough JavaScript Objects**
+  - Set of key-value pairs
+  - Can hold key-values of multiple different types
+  - Access "properties" on an object using the `.propertyName` notation or `["propertyName"]` notation
+  - You can have objects nested inside of objects
 
 ```jsx
-// TSK
+// * object * \\
+user = {
+  name: "Will",
+  password: 12345,
+  isInstructor: true,
+};
+// user.name => "Will"
+// user["name"] = "Will"
 ```
 
 🔻
 
-- [ ] **TSK**
+- [ ] **Walkthrough JavaScript Arrays**
+  - Holds a list of values
+  - Index starts at 0
+  - The values can be of multiple varying types
 
 ```jsx
-// TSK
+// * array * \\
+names = ["Suzy", "Rachel", "Mark"];
+misc = ["Train", 10, { iceCubes: 10, pickles: false, happy: "yes" }];
+// names[0] => "Suzy"
+// misc[2].pickles => false
 ```
 
 🔻
 
-**Check**: TSK
+- [ ] **Walkthrough Declaring Variables in JavaScript**
+  - The old way was `var`
+  - The new ways (ES6+) are `let` and `const`
+  - `let` lets you reassign variable values
+  - `const` is for immutable values
+  - You are able to change object property values even when the object is assigned using `const`
 
-- TSK
+```jsx
+// * Declaring Variables * \\
+var powerLevel = 9001;
+
+let currentMood;
+currentMood = "Pensive";
+currentMood = "Disgruntled";
+// console.log(currentMood)
+
+const vehicle = {
+  make: "Porche",
+  model: "911 Carrera  4S",
+  price: {
+    amount: 124400,
+    currency: "USD",
+  },
+};
+// console.log(vehicle)
+// vehicle = "Taco Truck"
+// console.log(vehicle)
+vehicle.price = 12440000;
+// console.log(vehicle)
+```
+
+🔻
+
+**Check**: Assess your understanding of JavaScript data types
+
+- How do you declare a string in JavaScript?
+- What is a "floating point" number mean?
+- Is an empty string truthy or falsy? What data type do these values refer to?
+- What data type would you use to purposely set a variable to have no set value?
+- Can I put an object inside another object?
+- How would I access the second item in an array of ten items?
+- What is the difference between `let` and `const` in JavaScript?
 
 ---
 
 ### STEP 2: OPERATORS
 
-**Aim**: TSK
+**Aim**: Comprehend the various JavaScript operators and the nuances of each.
 
-| _TSK_ |
+| _./operators.js_ |
 
-- [ ] **TSK**
+- [ ] **Walkthrough the JavaScript Addition Operator**
+  - Use the `+` sign to signify addition
+  - You can "add" string together
+  - A number added to a string will turn them into strings
 
 ```jsx
-
+// * Addition *
+console.groupCollapsed("Addition");
+console.log(2 + 2); // 4
+console.log("good" + " day"); // "good day"
+console.log(2 + "day"); // "2day"
+console.log(2 + "2"); // "22"
+console.groupEnd();
 ```
 
 🔻
 
-- [ ] **TSK**
+- [ ] **Walkthrough the JavaScript Subtraction Operator**
+  - Use the `-` sign
+  - You CANNOT subtract strings or strings and numbers
+  - Subtracting a number and a string version of a number will turn them into numbers and perform the operation
 
 ```jsx
-
+// * Subtraction *
+console.groupCollapsed("Subtraction");
+console.log(4 - 2); // 2
+console.log("good" - "night"); // NaN
+console.log("good" - 2); // NaN
+console.log(2 - "2"); // 0
+console.groupEnd();
 ```
 
 🔻
 
-| _TSK_ |
-
-- [ ] **TSK**
+- [ ] **Walkthrough the JavaScript Multiplication Operator**
+  - Use the `*` sign to signify multiplication
+  - JavaScript follows PEMDAS
 
 ```jsx
-// TSK
+// * Multiplication *
+console.groupCollapsed("Multiplication");
+console.log(2 * 2); // 4
+console.log(2 + 2 * 7); // 16
+console.groupEnd();
 ```
 
 🔻
 
-- [ ] **TSK**
+- [ ] **Walkthrough the JavaScript Division Operator**
+  - Use the `/` sign to signify division
+  - A number divided by 0 is equal to `Infinity`
+  - 0 divided by a number is 0
 
 ```jsx
-// TSK
+// * Division *
+console.groupCollapsed("Division");
+console.log(4 / 2); // 2
+console.log(4 / 0); // Infinity
+console.log(0 / 4); // 0
+console.groupEnd();
 ```
 
 🔻
 
-- [ ] **TSK**
+- [ ] **Walkthrough the JavaScript Incrementing Operator**
+  - Use the `++` operator to increment a number variable
+  - Variables must not be declared with `const`
 
 ```jsx
-// TSK
+// * Incrementing *
+const a = 10;
+let b = 20;
+console.groupCollapsed("Incrementing");
+console.log(a + 1); // 11
+// console.log(a++); // Error
+console.log(b++, b++); // 21
+console.groupEnd();
 ```
 
 🔻
 
-- [ ] **TSK**
+- [ ] **Walkthrough the JavaScript Decrementing Operator**
+  - Use the `--` operator to decrement a number variable
+  - Variables must not be declared with `const`
 
 ```jsx
-// TSK
+// * Decrementing *
+const c = 30;
+let d = 40;
+console.groupCollapsed("Decrementing");
+console.log(c - 1); // 9
+// console.log(c--); // Error
+console.log(d--, d--); // 39
+console.groupEnd();
 ```
 
 🔻
 
-**Check**: TSK
+**Check**: Assess your understanding of JavaScript operators
 
-- TSK
+- Can you add two strings together? How about subtracting?
+- What happens when you add a number and a string together? How about when subtracting?
+- What would be the output of 121 / 0 in JavaScript?
+- Can you increment a constant variable? How about decrement?
 
 ---
 
 ### STEP 3: COMPARISONS
 
-**Aim**: TSK
+**Aim**: Comprehend the various JavaScript comparisons and the use-cases for each.
 
-| _TSK_ |
+| _./comparisons.js_ |
 
-- [ ] **TSK**
+- For 99% of use-cases, use the `===` & `!==` comparison operators instead of `==` & `!=`.
+
+- [ ] **Walkthrough String Comparisons in JavaScript**
+  - Capatilization matters when strictly comparing strings
+  - You can use global string methods to compare upper and lower case strings
 
 ```jsx
-
+// * Strings *
+console.groupCollapsed("String Comparison");
+console.log("hi" === "hi"); // true
+console.log("hi" === "HI"); // false
+console.log("hi" === "HI".toLowerCase()); // true
+console.groupEnd();
 ```
 
 🔻
 
-- [ ] **TSK**
+- [ ] **Walkthrough Number Comparisons in JavaScript**
+  - Loose comparison between a number and a string version of that number will come out true
+  - Using a strict comparison, this same expression will be falsy
+  - JavaScript solves/runs expressions before comparing
 
 ```jsx
-
+// * Numbers *
+console.groupCollapsed("Number Comparison");
+console.log(10 == "10"); // true
+console.log(10 === "10"); // false
+console.log(10 === 5 + 5); // true
+console.groupEnd();
 ```
 
 🔻
 
-| _TSK_ |
-
-- [ ] **TSK**
+- [ ] **Walkthrough Boolean Comparisons in JavaScript**
+  - You can use the built in `Boolean()` method to check whether statements, expressions, or values are "truthy" or "falsy"
+  - Use the `!==` to check if the statement is "not equal to"
 
 ```jsx
-// TSK
+// * Booleans *
+console.groupCollapsed("Boolean Comparison");
+console.log(Boolean(undefined)); // false
+console.log(Boolean(null)); // false
+console.log(Boolean(2)); // true
+console.log(Boolean("Hi")); // true
+console.log(Boolean("")); // false
+console.log(true !== true); // false
+console.groupEnd();
 ```
 
 🔻
 
-- [ ] **TSK**
+- [ ] **Walkthrough Special Comparisons in JavaScript**
+  - Loose comparison between `undefined` and `null` results in "true"
+  - Strict comparison between `undefined` and `null` will be "false"
 
 ```jsx
-// TSK
+// * Specials *
+console.groupCollapsed("Specials Comparison");
+console.log(undefined == null); // true
+console.log(undefined === null); // false
+console.groupEnd();
 ```
 
 🔻
 
-- [ ] **TSK**
+- [ ] **Walkthrough Object Comparisons in JavaScript**
+  - Objects with the same values are not equal to one another under strict and loose comparison. This is because objects are values stored in memory, each in a different location... when we are comparing we are comparing the places in memory and not the values we see with our eyes
+  - Properties that result in the same value can be "truthy" when compared
 
 ```jsx
-// TSK
+// * Objects *
+console.groupCollapsed("Object Comparison");
+console.log({ name: "Will" } === { name: "Will" }); // false
+console.log({ name: "Will" } == { name: "Will" }); // false
+console.log({ name: "Will" }.name == { name: "Will" }.name); // true
+console.groupEnd();
 ```
 
 🔻
 
-- [ ] **TSK**
+- [ ] **Walkthrough Array Comparisons in JavaScript**
+  - Arrays with the same values will also never be "truthy" or equal to eachother for the same reasons
+  - Grabbing an element from an array by accessing the index will return the value, which can be tested against other values and possibly result in a "truthy" result
 
 ```jsx
-// TSK
+// * Arrays *
+console.groupCollapsed("Array Comparison");
+console.log(["hi", "bye"] === ["hi", "bye"]); // false
+console.log(["hi", "bye"] == ["hi", "bye"]); // false
+console.log(["hi", "bye"][0] == "hi"); // true
+console.groupEnd();
 ```
 
 🔻
 
-**Check**: TSK
+- [ ] **Walkthrough And & Or Comparisons in JavaScript**
+  - The `&&` comparison operator checks if the first expression AND the second expression are true - in which case the whole statement will return true. If one side of the statement results in false, the whole statement becomes false!
+  - The `||` comparison operator checks if the first expression OR the second expression are true - in which case the whole statement will return true. If one side of the statement results in false, yet the other is true, the whole statement becomes truthy!
 
-- TSK
+```jsx
+// * And / Or *
+console.groupCollapsed("And / Or Comparison");
+console.log(2 + 2 === 4 && "abc" === "abc"); // true
+console.log(2 + 2 === 5 && "abc" === "abc"); // false
+console.log(2 + 2 === 4 && "abc" === "def"); // false
+console.log(2 + 2 === 4 || "abc" === "abc"); // true
+console.log(2 + 2 === 4 || "abc" === "def"); // true
+console.log(2 + 2 === 5 || "abc" === "abc"); // true
+console.groupEnd();
+```
+
+🔻
+
+**Check**: Assess your understanding of JavaScript comparison operators
+
+- Are the strings "codefi" and "Codefi" equal, strictly speaking?
+- What happens when JavaScript evaluates the code `100 === 1 + 2 + 3 + 95`?
+- Is `undefined` a truthy or falsy value? How about null? And 0?
+- Does JavaScript treat `null` and `undefined` as the same value? Explain.
+- Can an object every be equal to another object? How about for arrays?
+- What is the `&&` operator? How about `||`?
 
 ---
 
 ### STEP 4: CONDITIONALS. FLOWS, LOOPS
 
-**Aim**: TSK
+**Aim**: Comprehend the various ways in JavaScript to create conditionals and loops.
 
 | _TSK_ |
 
@@ -273,7 +477,7 @@ By the end of this lesson, you will be able to:
 
 🔻
 
-**Check**: TSK
+**Check**: Assess your understanding of JavaScript conditionals, flows, and loops
 
 - TSK
 

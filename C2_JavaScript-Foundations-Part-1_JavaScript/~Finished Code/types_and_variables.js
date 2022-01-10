@@ -1,25 +1,25 @@
-// * string *
+// * string * \\
 "Anything wrapped in quotes is a string";
 "They can be double quotes or single quotes";
 "2";
 
-// * number *
+// * number * \\
 1; // 1.0
 10.0;
 13.9;
 
-// * boolean *
+// * boolean * \\
 true;
 false;
 // "some text" => truthy
 // "" => falsy
 
-// * special *
+// * special * \\
 undefined;
 null;
 NaN;
 
-// * object *
+// * object * \\
 user = {
   name: "Will",
   password: 12345,
@@ -28,13 +28,13 @@ user = {
 // user.name => "Will"
 // user["name"] = "Will"
 
-// * array *
+// * array * \\
 names = ["Suzy", "Rachel", "Mark"];
 misc = ["Train", 10, { iceCubes: 10, pickles: false, happy: "yes" }];
 // names[0] => "Suzy"
 // misc[2].pickles => false
 
-// * Declaring Variables *
+// * Declaring Variables * \\
 var powerLevel = 9001;
 
 let currentMood;
