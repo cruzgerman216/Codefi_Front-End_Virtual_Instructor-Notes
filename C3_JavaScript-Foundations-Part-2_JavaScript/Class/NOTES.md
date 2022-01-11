@@ -166,59 +166,106 @@ const greet = function () {
 
 | _./objects.js_ |
 
-- [ ] **TSK**
+- [ ] **Creating an Object**
+  - Create an object that represents basic information on a single student
 
 ```jsx
-
+const student = {
+  name: "Jamie",
+  shouldBuildProjects: true,
+  age: 44,
+};
 ```
 
 🔻
 
-- [ ] **TSK**
+- [ ] **Accessing Object Properties**
+  - To access you can use the objects name followed by a `.` and then the property on the object
+  - You can also use the [""] syntax which is especially useful for variables
+  - Create a seperate variable that hold a string value of a property on the object
+  - Try to use the dot notation and the bracket notation and see what the results are in your console
 
 ```jsx
+// * ACCESSING an OBJECT * \\
+const filterWord = "name";
 
+console.log("Dot Notation:", student.name);
+console.log("Bracket Notation:", student["name"]);
+console.log("Dot Notation w/ Variable:", student.filterWord);
+console.log("Bracket Notation w/ Variable:", student[filterWord]);
 ```
 
 🔻
 
-| _TSK_ |
-
-- [ ] **TSK**
+- [ ] **Creating & Calling a Method on an Object**
+  - You can place functions inside of objects, these are called _methods_
+  - Create a method that uses the `this` keyword to return a template literal statement of the students name
 
 ```jsx
-// TSK
+// * DECLARING an OBJECT * \\
+const student = {
+  name: "Jamie",
+  shouldBuildProjects: true,
+  age: 44,
+  introduce: function () {
+    return `I am ${this.name}`;
+  },
+};
+
+// . . .
+
+// * CALLING a METHOD on an OBJECT * \\
+const sayHello = student.introduce();
+
+console.log("Object Method:", sayHello);
 ```
 
 🔻
 
-- [ ] **TSK**
+- [ ] **Creating a Method that Takes in a Parameter**
+  - Create antoher method on the `student` object that takes in a parameter and returns a template literal string using the argument passed in to it
 
 ```jsx
-// TSK
+// * DECLARING an OBJECT * \\
+const student = {
+  name: "Jamie",
+  shouldBuildProjects: true,
+  age: 44,
+  introduce: function () {
+    return `I am ${this.name}`;
+  },
+  motivate: function (reasonForLearningToCode) {
+    return `I want to learn how to code so I can ${reasonForLearningToCode}`;
+  },
+};
+
+// . . .
+// * CALLING a METHOD w/ a PARAMETER on an OBJECT * \\
+const findingYourWhy = student.motivate("help out my family.");
+
+console.log("Object Method w/ PARAM:", findingYourWhy);
 ```
 
 🔻
 
-- [ ] **TSK**
+- [ ] **Global Methods for Different Data Types**
+  - Almost everything in JavaScript is an object
+  - Strings, Numbers, Objects, Arrays all have specific methods you can call on them because JS has an object with prebuilt methods for each data type
 
 ```jsx
-// TSK
-```
+// * GLOBAL METHODS PREVIEW * \\
+const veryHappyGreeting = "I am happy to see you!".toUpperCase();
 
-🔻
-
-- [ ] **TSK**
-
-```jsx
-// TSK
+console.log(veryHappyGreeting);
 ```
 
 🔻
 
 **Check**: Assess your understanding of JavaScript objects
 
-- TSK
+- How do you define key-value pairs in a JavaScript object?
+- What object property notation would you use if you wanted to search using a seperate variable?
+- What is a function inside an object typically called?
 
 ---
 
