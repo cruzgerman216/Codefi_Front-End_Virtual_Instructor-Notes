@@ -19,9 +19,9 @@ By the end of this lesson, you will be able to:
 
 ### CONCEPTS
 
-- **Data Types:** _Data types_ are a classification that specifies which _type_ of value a variable has and what type of mathemataical, relational, or logical operations can be applied to it (without causing an error).
+- **Data Types:** _Data types_ are a classification that specifies which _type_ of value a variable has and what type of mathematical, relational, or logical operations can be applied to it (without causing an error).
 
-- **Operators:** _Operators_ are objects that are capable of manipulating or evaluating an expression. Common operators include, but are not limited to:
+- **Operators:** _Operators_ are objects capable of manipulating or evaluating an expression. Standard operators include, but are not limited to:
 
   - \+
   - \-
@@ -171,7 +171,7 @@ vehicle.price = 12440000;
 - How do you declare a string in JavaScript?
 - What is a "floating point" number mean?
 - Is an empty string truthy or falsy? What data type do these values refer to?
-- What data type would you use to purposely set a variable to have no set value?
+- What data type would you use to purposely set a variable with no set value?
 - Can I put an object inside another object?
 - How would I access the second item in an array of ten items?
 - What is the difference between `let` and `const` in JavaScript?
@@ -186,7 +186,7 @@ vehicle.price = 12440000;
 
 - [ ] **Walkthrough the JavaScript Addition Operator**
   - Use the `+` sign to signify addition
-  - You can "add" string together
+  - You can "add" strings together
   - A number added to a string will turn them into strings
 
 ```jsx
@@ -300,7 +300,7 @@ console.groupEnd();
 - For 99% of use-cases, use the `===` & `!==` comparison operators instead of `==` & `!=`.
 
 - [ ] **Walkthrough String Comparisons in JavaScript**
-  - Capatilization matters when strictly comparing strings
+  - Capitalization matters when strictly comparing strings
   - You can use global string methods to compare upper and lower case strings
 
 ```jsx
@@ -331,7 +331,7 @@ console.groupEnd();
 🔻
 
 - [ ] **Walkthrough Boolean Comparisons in JavaScript**
-  - You can use the built in `Boolean()` method to check whether statements, expressions, or values are "truthy" or "falsy"
+  - You can use the built-in `Boolean()` method to check whether statements, expressions, or values are "truthy" or "falsy"
   - Use the `!==` to check if the statement is "not equal to"
 
 ```jsx
@@ -363,7 +363,7 @@ console.groupEnd();
 🔻
 
 - [ ] **Walkthrough Object Comparisons in JavaScript**
-  - Objects with the same values are not equal to one another under strict and loose comparison. This is because objects are values stored in memory, each in a different location... when we are comparing we are comparing the places in memory and not the values we see with our eyes
+  - Objects with the same values are not equal under strict and loose comparison. This is because objects are values stored in memory, each in a different location... when we are comparing, we are comparing the places in memory and not the values we see with our eyes
   - Properties that result in the same value can be "truthy" when compared
 
 ```jsx
@@ -378,7 +378,7 @@ console.groupEnd();
 🔻
 
 - [ ] **Walkthrough Array Comparisons in JavaScript**
-  - Arrays with the same values will also never be "truthy" or equal to eachother for the same reasons
+  - Arrays with the same values will also never be "truthy" or equal to each other for the same reasons
   - Grabbing an element from an array by accessing the index will return the value, which can be tested against other values and possibly result in a "truthy" result
 
 ```jsx
@@ -416,7 +416,7 @@ console.groupEnd();
 - What happens when JavaScript evaluates the code `100 === 1 + 2 + 3 + 95`?
 - Is `undefined` a truthy or falsy value? How about null? And 0?
 - Does JavaScript treat `null` and `undefined` as the same value? Explain.
-- Can an object every be equal to another object? How about for arrays?
+- Can an object ever be equal to another object? How about for arrays?
 - What is the `&&` operator? How about `||`?
 
 ---
@@ -505,7 +505,7 @@ console.groupEnd();
 - [ ] **Walkthrough JavaScript "while" Loop**
   - Create an iterator or index variable
   - Loop over "while" a condition continues to be true
-  - IMPORTANT: ensure you are going to reach the base case to the statement by either incrementing or decrementing a variable... otherwise you will create an endless loop and crash your browser / computer
+  - IMPORTANT: ensure you are going to reach the base case to the statement by either incrementing or decrementing a variable... otherwise, you will create an endless loop and crash your browser/computer
 
 ```jsx
 // * "while" loop *
@@ -528,7 +528,7 @@ console.groupEnd();
 
 - [ ] **Walkthrough JavaScript "for...of" Loop**
   - Simpler syntax for looping over arrays
-  - You don't have access to the index
+  - You do not have access to the index
 
 ```jsx
 // * "for...of" loop *
@@ -549,7 +549,7 @@ console.groupEnd();
 
 - What is an "if" statement?
 - How would you iterate over every item in an array of unknown length?
-- How do you protect agains infinite loops?
+- How do you protect against infinite loops?
 
 ---
 

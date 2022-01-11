@@ -12,13 +12,13 @@ By the end of this lesson, you will be able to:
 2. **Create JS Objects**
 3. **Grasp Common JS Built-in Objects & Methods**
 
-![TSK finished project](../Resources/TSK)
+![Class 3 Finished Product Terminal Window](../Resources/C3_Finished-Project.png)
 
 ---
 
 ### CONCEPTS
 
-- **Function:** A _function_ is a way to create an on-demand, reusable and exectuable block of code.
+- **Function:** A _function_ is a way to create an on-demand, reusable and executable code block.
 
 - **Object:** Almost everything in JavaScript is an _object_. _Objects_ in a nutshell, are a set of self-contained key-value pairs.
 
@@ -35,7 +35,7 @@ By the end of this lesson, you will be able to:
 | _./functions.js_ |
 
 - [ ] **Creating Our First Function**
-  - The purpose of functions is to create a block of code you can run anytime. This reduces the duplication of code and enhances the readability
+  - The purpose of functions is to create a block of code you can run anytime. Creating functions helps reduce the duplication of code and enhances the readability
   - You can replace multiple `console.log()` statements that say the same thing by creating a function that prints the statement and calling the function multiple times instead
 
 ```jsx
@@ -57,10 +57,10 @@ learnToCode();
 🔻
 
 - [ ] **Pass Parameters to a Function**
-  - To add dynamic abilities to a funciton, it can accept an _argument_ and use that information insdie to run differently depending on what is passed in
+  - To add dynamic abilities to a function, it can accept an _argument_ and use that information inside to run differently depending on the parameter's value
   - Pass in a student variable, give it a default value of "nobody"
-  - Use a template literal to pass in the studnets name with a string after
-  - When you are calling the functino, pass in a string for a studnets name
+  - Use a template literal to pass in the student's name with a string after
+  - When you are calling the function, pass in a string for a student's name
 
 ```jsx
 // * FUNCTION DECLARATION (Generic) * \\
@@ -180,9 +180,9 @@ const student = {
 🔻
 
 - [ ] **Accessing Object Properties**
-  - To access you can use the objects name followed by a `.` and then the property on the object
-  - You can also use the [""] syntax which is especially useful for variables
-  - Create a seperate variable that hold a string value of a property on the object
+  - To access, you can use the objects name followed by a `.` and then the property on the object
+  - You can also use the [""] syntax, which is especially useful for variables
+  - Create a separate variable that holds a string value of a property on the object
   - Try to use the dot notation and the bracket notation and see what the results are in your console
 
 ```jsx
@@ -198,8 +198,8 @@ console.log("Bracket Notation w/ Variable:", student[filterWord]);
 🔻
 
 - [ ] **Creating & Calling a Method on an Object**
-  - You can place functions inside of objects, these are called _methods_
-  - Create a method that uses the `this` keyword to return a template literal statement of the students name
+  - You can place functions inside of objects; these are called _methods_
+  - Create a method that uses the `this` keyword to return a template literal statement of the student's name
 
 ```jsx
 // * DECLARING an OBJECT * \\
@@ -223,7 +223,7 @@ console.log("Object Method:", sayHello);
 🔻
 
 - [ ] **Creating a Method that Takes in a Parameter**
-  - Create antoher method on the `student` object that takes in a parameter and returns a template literal string using the argument passed in to it
+  - Create another method on the `student` object that takes in a parameter and returns a template literal string using the argument passed into it
 
 ```jsx
 // * DECLARING an OBJECT * \\
@@ -264,7 +264,7 @@ console.log(veryHappyGreeting);
 **Check**: Assess your understanding of JavaScript objects
 
 - How do you define key-value pairs in a JavaScript object?
-- What object property notation would you use if you wanted to search using a seperate variable?
+- What object property notation would you use if you wanted to search using a separate variable?
 - What is a function inside an object typically called?
 
 ---
@@ -275,59 +275,182 @@ console.log(veryHappyGreeting);
 
 | _./built-in-objects.js_ |
 
-- [ ] **TSK**
+- [ ] **Discovering the Global `window` object**
+  - JavaScript requires a browser to run (we will learn about NodeJS later on), and so, every browser stores a global JS object
+  - If you type window into your developer tools console, you can see all the methods and properties available to you.
+  - Every time we create a function or object, it will be available on this global window object. Everything in the global object you can omit the window... it is implied
 
 ```jsx
-
+console.log(window);
 ```
 
 🔻
 
-- [ ] **TSK**
+- [ ] **Introduce Common Built-in String Methods**
+  - toUpperCase()
+  - toLowerCase()
+  - startsWith()
+  - repeat()
+  - trim()
+  - charAt()
+  - replace()
+  - split()
 
 ```jsx
+// * ===> COMMON BUILT-IN STRING METHODS <=== * \\
+const myString = "       TESTING methods       ";
 
+console.groupCollapsed("String Methods");
+console.log("toUpperCase():", myString.toUpperCase());
+console.log("toLowerCase():", myString.toLowerCase());
+console.log("startsWith():", myString.startsWith(" "));
+console.log("trim():", myString.trim());
+console.log("repeat():", myString.repeat(3));
+console.log("charAt():", myString.charAt(9));
+console.log("split():", myString.split("TESTING"));
+console.log("replace():", myString.replace("methods", "complete"));
+console.groupEnd();
 ```
 
 🔻
 
-| _TSK_ |
-
-- [ ] **TSK**
+- [ ] **Introduce Common Built-in Number Methods**
+  - toString()
+  - Number.isInterger()
+  - toFixed()
+  - isNaN()
 
 ```jsx
-// TSK
+// * ===> COMMON BUILT-IN NUMBER METHODS <=== * \\
+const myNumber = 3.14159263;
+
+console.groupCollapsed("Number Methods");
+console.log("toString():", myNumber.toString());
+console.log("Number.isInteger():", Number.isInteger(myNumber));
+console.log("toFixed():", myNumber.toFixed(2));
+console.log("isNaN():", isNaN(myNumber));
+console.groupEnd();
 ```
 
 🔻
 
-- [ ] **TSK**
+- [ ] **Introduce Common Built-in Math Methods**
+  - random()
+  - floor()
+  - ceil()
+  - round()
+  - min()
+  - max()
 
 ```jsx
-// TSK
+// * ===> COMMON BUILT-IN MATH METHODS <=== * \\
+console.groupCollapsed("Math Methods");
+console.log("random():", Math.random());
+console.log("floor():", Math.floor(3.9));
+console.log("ceil():", Math.ceil(3.1));
+console.log("round():", Math.round(3.49));
+console.log("min():", Math.min(2, 5, 1));
+console.log("max():", Math.max(2, 5, 1));
+console.groupEnd();
 ```
 
 🔻
 
-- [ ] **TSK**
+- [ ] **Introduce Common Built-in Date Methods**
+  - now()
+  - getDate()
+  - toDateString()
+  - toISOString()
+  - getSeconds()
+  - getMinutes()
+  - getHours()
+  - getDay()
+  - getMonth()
+  - getYear()
 
 ```jsx
-// TSK
+// * ===> COMMON BUILT-IN DATE METHODS <=== * \\
+console.groupCollapsed("Date Methods");
+console.log("now():", Date.now());
+console.log("getDate():", new Date().getDate());
+console.log("toDateString():", new Date().toDateString());
+console.log("toISOString():", new Date().toISOString());
+console.log("getSeconds():", new Date().getSeconds());
+console.log("getMinutes():", new Date().getMinutes());
+console.log("getHours():", new Date().getHours());
+console.log("getDay():", new Date().getDay());
+console.log("getMonth():", new Date().getMonth());
+console.log("getYear():", new Date().getYear());
+console.groupEnd();
 ```
 
 🔻
 
-- [ ] **TSK**
+- [ ] **Introduce Common Built-in Document Methods**
+  - title
+  - URL
+  - body
+  - images
+  - querySelector()
+  - createElement()
 
 ```jsx
-// TSK
+// * ===> COMMON BUILT-IN DOCUMENT METHODS <=== * \\
+console.groupCollapsed("Document Methods");
+console.log("title:", document.title);
+console.log("URL:", document.URL);
+console.log("body:", document.body);
+console.log("images:", document.images);
+console.log("querySelector():", document.querySelector("h1"));
+console.log("createElement():", document.createElement("h1"));
+console.groupEnd();
 ```
+
+🔻
+
+- [ ] **Introduce Common Built-in Array Methods**
+  - length
+  - push()
+  - pop()
+  - includes()
+  - indexOf()
+
+```jsx
+// * ===> COMMON BUILT-IN ARRAY METHODS <=== * \\
+const myArray = [1, "Hello", false, 20, true];
+
+console.groupCollapsed("Array Methods");
+console.log("length:", myArray.length);
+console.log("push():", myArray.push("Last Item"));
+console.log("pop():", myArray.pop());
+console.log("includes():", myArray.includes("Hello"));
+console.log("indexOf():", myArray.indexOf("Hello"));
+console.groupEnd();
+```
+
+- [ ] **Future Array Methods We Will Learn**
+  - forEach()
+  - slice()
+  - splice()
+  - filter()
+  - map()
+  - sort()
+  - every()
+  - some()
+  - reduce()
 
 🔻
 
 **Check**: Assess your understanding of JavaScript built-in objects
 
-- TSK
+- How would you turn an all-caps string into a lower case string?
+- How would you remove all preceding and trailing whitespace in a string?
+- How would you turn the number 10.2132130 into 10.21?
+- How do you create a random number in JavaScript?
+- How do you get the Date?
+- What method do you call to grab the title of the document?
+- How do you check the overall length of an array?
+- How do you take off the last element in an array?
 
 ---
 
@@ -349,17 +472,15 @@ Specifically, we learned how to:
 
 - Create functions in old and modern fashion
 - Code custom objects and understand their capabilities
-- Recognize and use common built-in JavaScript objects
+- Recognize and use everyday built-in JavaScript objects
 
 ---
 
 ### RESOURCES
 
-[TSK _(Tool)_](tsk)
+[JavaScript Fundamentals - Functions _(Article)_](https://javascript.info/function-basics)
 
-[TSK _(Video)_](tsk)
-
-[TSK _(Article)_](tsk)
+[Modern JavaScript Tutorial #5 - Objects _(Video)_](https://www.youtube.com/watch?v=X0ipw1k7ygU&ab_channel=TheNetNinja)
 
 ---
 
