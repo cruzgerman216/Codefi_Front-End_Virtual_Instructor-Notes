@@ -1,13 +1,5 @@
 # TEMP
 
-## Functions
-
-1.
-
----
-
----
-
 ## Objects
 
 1.
