@@ -20,7 +20,7 @@ By the end of this lesson, you will be able to:
 
 ### CONCEPTS
 
-- **TSK:** _TSK_ is tsk
+- **DOM:** _TSK_ is tsk
 
 - **TSK:** _TSK_ is tsk
 
