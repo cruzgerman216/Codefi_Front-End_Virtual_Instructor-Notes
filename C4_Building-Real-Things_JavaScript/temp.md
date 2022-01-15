@@ -8,11 +8,7 @@
    - The form should have a price label + input, and qunaityt
    - Create the display for the form data outside the form
 
-2. CSS
-
-   -
-
-3. JS
+2. JS
    - Grab all of the HTML elements we will need
      - price input
      - quantity input
@@ -29,15 +25,15 @@
 
 ## Crazy Buttons
 
-1.
+1. HTML
 
----
+   - Create a section with a button, give it a class and atype of button
+   -
 
----
-
-## Coding Playground
-
-1.
+2. JS
+   - Grab all what we need
+   - Define Functions
+   - Create Event Listeners
 
 ---
 
@@ -45,7 +41,20 @@
 
 ## Stopwatch
 
-1.
+1. HTML
+
+   - Create a section with a timer, and two timer buttons
+   -
+
+2. JS
+   - Grab all what we need
+   - Define Functions
+   - Create Event Listeners
+   - Define timer time variable
+   - Application start interval
+   - Calclute number of minutes and seconds to display
+   - Seperate the interval into it's own function
+   - Add logic to main functions
 
 ---
 

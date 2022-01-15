@@ -91,3 +91,32 @@ h1 {
   font-weight: bold;
   letter-spacing: 3px;
 }
+
+/* * Crazy Buttons * */
+.crazy-button {
+  position: absolute;
+  top: 20%;
+  left: 35%;
+  min-width: 200px;
+  width: 30%;
+  max-width: 300px;
+  transition: 400ms ease all;
+}
+
+/* * Stopwatch * */
+.timer p {
+  font-size: 2rem;
+  color: #0284c7;
+  letter-spacing: 0;
+}
+
+.btn-reset {
+  background-color: transparent;
+  border: none;
+  color: #64748b;
+  cursor: pointer;
+}
+
+/* * Accordion * */
+
+/* * Scrolling Progress * */
