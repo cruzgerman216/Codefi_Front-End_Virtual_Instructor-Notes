@@ -62,7 +62,12 @@
 
 ## Accordion
 
-1.
+1. HTML
+
+   - Create a section with a accordion article with detials and summary tags
+   -
+
+2. CSS
 
 ---
 
@@ -70,7 +75,12 @@
 
 ## Scrolling Progress
 
-1.
+1. HTML
+
+   - Create a section with a scroll line div, a content container that stretches below the screen using lorem ipusum
+
+2. JS
+   - A
 
 ---
 

@@ -11,7 +11,7 @@ let isRunning = false;
 let timerInterval;
 
 // * ========== Function Declarations ========== * \\
-// FUNCTION: TSK
+// FUNCTION: Starts the timer
 function startTimer() {
   // If there was a previous timer, don't create another new timer
   if (isRunning) return;
@@ -20,7 +20,7 @@ function startTimer() {
   timerInterval = setInterval(incrementTime, 1000);
 }
 
-// FUNCTION: TSK
+// FUNCTION: Stops the timer
 function stopTimer() {
   // If there wasn't a previous timer, don't do anything
   if (!isRunning) return;
@@ -29,7 +29,7 @@ function stopTimer() {
   clearInterval(timerInterval);
 }
 
-// FUNCTION: TSK
+// FUNCTION: Resets the timer
 function resetTimer() {
   stopTimer();
 
@@ -67,11 +67,11 @@ function displayFormattedTime(minutes, seconds) {
 }
 
 // * ========== Event Listeners ========== * \\
-// EVENT LISTENER: TSK
+// EVENT LISTENER: Listens for a click on the start button to start the timer
 startButton.addEventListener("click", startTimer);
 
-// EVENT LISTENER: TSK
+// EVENT LISTENER: TSListens for a click on the stop button to stop the timer
 stopButton.addEventListener("click", stopTimer);
 
-// EVENT LISTENER: TSK
+// EVENT LISTENER: Listens for a click on the reset button to reset the timer
 resetButton.addEventListener("click", resetTimer);
