@@ -143,56 +143,144 @@ eventListenerButton.addEventListener("mouseenter", changeBgToRandom);
 
 ### STEP 2: PRICING CALCULATOR
 
-**Aim**: TSK
+**Aim**: Create a JavaScript calculator that takes in a price and quantity and displays the total
 
-| _TSK_ |
+| _./pricing-calculator.html_ |
+
+   <!-- - Create a section with a heading an a form -->
+   <!-- - The form should have a price label + input, and qunaityt -->
+   <!-- - Create the display for the form data outside the form -->
 
 - [ ] **TSK**
 
-```jsx
+```html
+<!-- * MAIN CONTENT * -->
+<main class="container">
+  <h1>Pricing Calculator!</h1>
 
+  <!-- User Input Form -->
+  <form class="pricing-form">
+    <!-- Price -->
+    <div>
+      <label for="price">Price</label>
+      <input type="number" name="price" id="price" value="50" min="0" />
+    </div>
+
+    <!-- Quantity -->
+    <div>
+      <label for="quantity"
+        >Quantity <span class="quantity-label"></span
+      ></label>
+      <input
+        type="range"
+        name="quantity"
+        id="quantity"
+        value="1"
+        min="1"
+        max="25"
+        step="1"
+      />
+    </div>
+  </form>
+
+  <!-- Data Display -->
+  <section class="data-display"><p class="total-price"></p></section>
+</main>
 ```
 
 🔻
 
+| _./pricing-calculator.js_ |
+
+ <!-- - Grab all of the HTML elements we will need
+     - price input
+     - quantity input
+     - data display paragraph -->
+
 - [ ] **TSK**
 
 ```jsx
-
+// * ========== HTML Element Selectors ========== * \\
+const priceInput = document.querySelector("#price");
+const quantityInput = document.querySelector("#quantity");
+const totalPriceInput = document.querySelector(".total-price");
 ```
 
 🔻
 
-| _TSK_ |
+   <!-- - Add our event listeners -->
 
 - [ ] **TSK**
 
 ```jsx
-// TSK
+// * ========== Event Listeners ========== * \\
+// EVENT LISTENER: Calculate Total Cost When Price Input Changes
+priceInput.addEventListener("input", calculateTotalCost);
+
+// EVENT LISTENER: Calculate Total Cost When Quantity Input Changes
+quantityInput.addEventListener("input", calculateTotalCost);
 ```
 
 🔻
 
+<!--
+   - Create the functions we will need
+     - console log the values first -->
+
 - [ ] **TSK**
 
 ```jsx
-// TSK
+// * ========== Function Declarations ========== * \\
+// FUNCTION: Calculate total Cost
+function calculateTotalCost() {
+  const total = priceInput.value * quantityInput.value;
+  totalPriceInput.innerText = `$${total.toFixed(2)}`;
+}
 ```
 
 🔻
 
+   <!-- - Run our function on application start to popluate the HTML -->
+
 - [ ] **TSK**
 
 ```jsx
-// TSK
+// * ========== Application Start ========== * \\
+// Calcualte the Total Cost When the Application Starts
+calculateTotalCost();
 ```
 
 🔻
 
+   <!-- - Update the Quanity Label -->
+
 - [ ] **TSK**
 
 ```jsx
-// TSK
+// * ========== HTML Element Selectors ========== * \\
+// . . .
+const quantityLabel = document.querySelector(".quantity-label");
+
+// * ========== Function Declarations ========== * \\
+// . . .
+
+// FUNCTION: Update Quantity Label
+function updateQuantityLabel() {
+  const quantity = quantityInput.value;
+  quantityLabel.innerText = quantity;
+}
+
+// * ========== Event Listeners ========== * \\
+// . . .
+
+// EVENT LISTENER: Update Quantity Label When Quantity Input Changes
+quantityInput.addEventListener("input", updateQuantityLabel);
+
+// * ========== Application Start ========== * \\
+// . . .
+
+// Update the Quantity Label When the Application Starts
+updateQuantityLabel();
 ```
 
 🔻
@@ -205,14 +293,34 @@ eventListenerButton.addEventListener("mouseenter", changeBgToRandom);
 
 ### STEP 3: CRAZY BUTTONS
 
-**Aim**: TSK
+**Aim**: Create a button that moves whenever a user tries to hover over the button
 
-| _TSK_ |
+| _./crazy-buttons.html_ |
+
+<!-- - Create a section with a button, give it a class and atype of button -->
+
+- [ ] **TSK**
+
+```html
+<!-- * MAIN CONTENT * -->
+<main class="container">
+  <h1>Crazy Buttons!</h1>
+
+  <section>
+    <button type="button" class="btn crazy-button">Can You Click Me?</button>
+  </section>
+</main>
+```
+
+🔻
+
+| _./crazy-buttons.js_ |
 
 - [ ] **TSK**
 
 ```jsx
-
+// * ========== HTML Element Selectors ========== * \\
+const crazyButton = document.querySelector(".crazy-button");
 ```
 
 🔻
@@ -220,17 +328,9 @@ eventListenerButton.addEventListener("mouseenter", changeBgToRandom);
 - [ ] **TSK**
 
 ```jsx
-
-```
-
-🔻
-
-| _TSK_ |
-
-- [ ] **TSK**
-
-```jsx
-// TSK
+// * ========== Event Listeners ========== * \\
+// EVENT LISTENER: Listens for the mouse to hover the "crazyButton" and calls "goBtnWild()"
+crazyButton.addEventListener("mouseenter", goBtnWild);
 ```
 
 🔻
@@ -238,7 +338,14 @@ eventListenerButton.addEventListener("mouseenter", changeBgToRandom);
 - [ ] **TSK**
 
 ```jsx
-// TSK
+// * ========== Function Declarations ========== * \\
+// FUNCTION: Gets a random position on screen and sets the button to that location
+function goBtnWild() {
+  const offsetTop =
+    Math.random() * (window.innerHeight - crazyButton.clientHeight);
+  const offsetLeft =
+    Math.random() * (window.innerWidth - crazyButton.clientWidth);
+}
 ```
 
 🔻
@@ -246,15 +353,17 @@ eventListenerButton.addEventListener("mouseenter", changeBgToRandom);
 - [ ] **TSK**
 
 ```jsx
-// TSK
-```
+// * ========== Function Declarations ========== * \\
+// FUNCTION: Gets a random position on screen and sets the button to that location
+function goBtnWild() {
+  const offsetTop =
+    Math.random() * (window.innerHeight - crazyButton.clientHeight);
+  const offsetLeft =
+    Math.random() * (window.innerWidth - crazyButton.clientWidth);
 
-🔻
-
-- [ ] **TSK**
-
-```jsx
-// TSK
+  crazyButton.style.top = offsetTop + "px";
+  crazyButton.style.left = offsetLeft + "px";
+}
 ```
 
 🔻
@@ -267,56 +376,214 @@ eventListenerButton.addEventListener("mouseenter", changeBgToRandom);
 
 ### STEP 4: STOPWATCH
 
-**Aim**: TSK
+**Aim**: Create a stopwatch using JavaScript with start, stop, and reset buttons
 
-| _TSK_ |
+   <!-- - Create a section with a timer, and two timer buttons -->
+
+| _./stopwatch.html_ |
 
 - [ ] **TSK**
 
-```jsx
+```html
+<!-- * MAIN CONTENT * -->
+<main class="container">
+  <h1>Stopwatch!</h1>
 
+  <article>
+    <!-- Timer Display -->
+    <section class="timer">
+      <p>
+        <span class="minutes">0 0</span> : <span class="seconds">0 0</span>
+      </p>
+    </div>
+
+    <!-- Timer Buttons -->
+    <section class="timer-buttons">
+      <div>
+        <button data-action="start" class="btn btn-start">Start</button>
+        <button data-action="stop" class="btn btn-stop">Stop</button>
+      </div>
+
+      <button data-action="reset" class="btn-reset">Reset</button>
+    </section>
+  </article>
+</main>
 ```
 
 🔻
 
+| _./stopwatch.js_ |
+
+<!--    - Grab all what we need
+ -->
+
 - [ ] **TSK**
 
 ```jsx
-
+// * ========== HTML Element Selectors ========== * \\
+const startButton = document.querySelector("[data-action='start']");
+const stopButton = document.querySelector("[data-action='stop']");
+const resetButton = document.querySelector("[data-action='reset']");
+const minutesDisplay = document.querySelector(".minutes");
+const secondsDisplay = document.querySelector(".seconds");
 ```
 
 🔻
 
-| _TSK_ |
+   <!-- - Create Event Listeners -->
 
 - [ ] **TSK**
 
 ```jsx
-// TSK
+// * ========== Event Listeners ========== * \\
+// EVENT LISTENER: Listens for a click on the start button to start the timer
+startButton.addEventListener("click", startTimer);
+
+// EVENT LISTENER: TSListens for a click on the stop button to stop the timer
+stopButton.addEventListener("click", stopTimer);
+
+// EVENT LISTENER: Listens for a click on the reset button to reset the timer
+resetButton.addEventListener("click", resetTimer);
 ```
 
 🔻
 
+   <!-- - Define Functions -->
+
 - [ ] **TSK**
 
 ```jsx
-// TSK
+// * ========== Function Declarations ========== * \\
+// FUNCTION: Starts the timer
+function startTimer() {}
+
+// FUNCTION: Stops the timer
+function stopTimer() {}
+
+// FUNCTION: Resets the timer
+function resetTimer() {}
 ```
 
 🔻
 
+   <!-- - Define timer time variable -->
+
 - [ ] **TSK**
 
 ```jsx
-// TSK
+// * ========== Global Variables ========== * \\
+let currTime = 0;
 ```
 
 🔻
 
+   <!-- - Application start interval -->
+
 - [ ] **TSK**
 
 ```jsx
-// TSK
+// FUNCTION: Starts the timer
+function startTimer() {
+  setInterval(() => {
+    // Increment the current time variable
+    currTime++;
+
+    // Get the formatted seconds and minutes based on the current time
+    const { minutes, seconds } = getFormattedTime(); // { minutes: 1, seconds: 30 }
+
+    // Display the time to the screen
+    displayFormattedTime(minutes, seconds);
+  }, 1000);
+}
+```
+
+🔻
+
+   <!-- -    - Calclute number of minutes and seconds to display
+ -->
+
+- [ ] **TSK**
+
+```jsx
+// FUNCTION: Helper Function to format time into proper text
+function getFormattedTime() {
+  let min = Math.floor(currTime / 60);
+  let sec = currTime % 60;
+
+  return {
+    minutes: min < 10 ? `0 ${min}` : min,
+    seconds: sec < 10 ? `0 ${sec}` : sec,
+  };
+}
+
+// FUNCTION: Helper function ot display the formatted time to the correct HTML element
+function displayFormattedTime(minutes, seconds) {
+  minutesDisplay.innerText = minutes;
+  secondsDisplay.innerText = seconds;
+}
+```
+
+🔻
+
+   <!-- -      - Seperate the interval into it's own function
+
+ -->
+
+- [ ] **TSK**
+
+```jsx
+// FUNCTION: Start an Interval that increases the global timer variable by 1 every second
+function incrementTime() {
+  // Increment the current time variable
+  currTime++;
+
+  // Get the formatted seconds and minutes based on the current time
+  const { minutes, seconds } = getFormattedTime(); // { minutes: 1, seconds: 30 }
+
+  // Display the time to the screen
+  displayFormattedTime(minutes, seconds);
+}
+```
+
+🔻
+
+   <!-- -         - Add logic to main functions
+ -->
+
+- [ ] **TSK**
+
+```jsx
+// * ========== Global Variables ========== * \\
+let currTime = 0;
+let isRunning = false;
+let timerInterval;
+
+// * ========== Function Declarations ========== * \\
+// FUNCTION: Starts the timer
+function startTimer() {
+  // If there was a previous timer, don't create another new timer
+  if (isRunning) return;
+
+  isRunning = true;
+  timerInterval = setInterval(incrementTime, 1000);
+}
+
+// FUNCTION: Stops the timer
+function stopTimer() {
+  // If there wasn't a previous timer, don't do anything
+  if (!isRunning) return;
+
+  isRunning = false;
+  clearInterval(timerInterval);
+}
+
+// FUNCTION: Resets the timer
+function resetTimer() {
+  stopTimer();
+
+  currTime = 0;
+  displayFormattedTime("0 0", "0 0");
+}
 ```
 
 🔻
@@ -329,56 +596,91 @@ eventListenerButton.addEventListener("mouseenter", changeBgToRandom);
 
 ### STEP 5: ACCORDION
 
-**Aim**: TSK
+**Aim**: Create an Accordion menu
 
-| _TSK_ |
+| _./accordion.html_ |
+
+   <!-- - Create a section with a accordion article with detials and summary tags -->
 
 - [ ] **TSK**
 
-```jsx
+```html
+<!-- * MAIN CONTENT * -->
+<main class="container">
+  <h1>JS Accordion!</h1>
 
+  <article class="accordion-container">
+    <details>
+      <summary>What is HTML?</summary>
+      <p>
+        <strong>HTML</strong> (Hyper-Text Markup Language) is the standard
+        markup language for documents designed to be displayed inside a web
+        browser.
+      </p>
+    </details>
+    <details>
+      <summary>What is CSS?</summary>
+      <p>
+        <strong>CSS</strong> (Cascading Style Sheets) is a style sheet language
+        used for describing the presentation of a document written in a markup
+        language such as HTML.
+      </p>
+    </details>
+    <details>
+      <summary>What is JavaScript?</summary>
+      <p>
+        <strong>JavaScript</strong> is a dynamic programming language used for
+        web development, software applications, game creation, machine learning,
+        and more.
+      </p>
+    </details>
+  </article>
+</main>
+```
+
+🔻
+
+| _./accordion.css_ |
+
+- [ ] **TSK**
+
+```css
+.accordion-container {
+  display: flex;
+  flex-direction: column;
+  width: clamp(250px, 30%, 500px);
+  margin: 1em auto;
+}
 ```
 
 🔻
 
 - [ ] **TSK**
 
-```jsx
+```css
+details {
+  width: 100%;
+  text-align: left;
+  margin: 1em 0;
+  padding: 1em 2em;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12),
+    0px 2px 4px -1px rgba(0, 0, 0, 0.2);
+}
 
-```
+details[open] {
+  background-color: #f1f5f9;
+}
 
-🔻
+summary {
+  color: #075985;
+  font-size: 2rem;
+  cursor: pointer;
+}
 
-| _TSK_ |
-
-- [ ] **TSK**
-
-```jsx
-// TSK
-```
-
-🔻
-
-- [ ] **TSK**
-
-```jsx
-// TSK
-```
-
-🔻
-
-- [ ] **TSK**
-
-```jsx
-// TSK
-```
-
-🔻
-
-- [ ] **TSK**
-
-```jsx
-// TSK
+details p {
+  font-size: 1.5rem;
+  color: #1e293b;
+}
 ```
 
 🔻
@@ -391,14 +693,88 @@ eventListenerButton.addEventListener("mouseenter", changeBgToRandom);
 
 ### STEP 6: SCROLLING PROGRESS
 
-**Aim**: TSK
+**Aim**: Create a progress bar that shows how far a user is down the page
 
-| _TSK_ |
+| _./scrolling-progress.html_ |
+
+<!-- - Create a progress bar in html -->
+
+- [ ] **TSK**
+
+```html
+<h1>Scrolling Progress Bar!</h1>
+
+<!-- Progress Bar -->
+<label
+  for="progress-bar"
+  class="sr-only"
+  aria-label="See the progress of your reading"
+  >Reading Progress</label
+>
+<progress class="progress-bar" id="progress-bar" value="0" max="100"></progress>
+
+<!-- . . . -->
+```
+
+🔻
+
+| _./scrolling-progress.css_ |
+
+- [ ] **Walkthrough the CSS**
+
+```css
+/* * Scrolling Progress * */
+.blog-post {
+  width: clamp(275px, 50%, 60ch);
+  margin: 1em auto;
+  font-size: 1.375rem;
+  padding: 0.125em 3em;
+  border-radius: 12px;
+  box-shadow: 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12),
+    0px 11px 15px -7px rgba(0, 0, 0, 0.2);
+}
+
+.progress-bar {
+  height: 0.75rem;
+  width: 100vw;
+
+  position: sticky;
+  top: 0;
+  left: 0;
+  display: none;
+  /* Reset the default appearance */
+  -webkit-appearance: none;
+  appearance: none;
+}
+progress[value]::-webkit-progress-bar {
+  background-color: #f0f9ff;
+  border-radius: 2px;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12),
+    0px 2px 4px -1px rgba(0, 0, 0, 0.2);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
+}
+```
+
+🔻
+
+| _./scrolling-progress.js_ |
 
 - [ ] **TSK**
 
 ```jsx
-
+// * ========== HTML Element Selectors ========== * \\
+const progressBar = document.querySelector("#progress-bar");
 ```
 
 🔻
@@ -406,17 +782,9 @@ eventListenerButton.addEventListener("mouseenter", changeBgToRandom);
 - [ ] **TSK**
 
 ```jsx
-
-```
-
-🔻
-
-| _TSK_ |
-
-- [ ] **TSK**
-
-```jsx
-// TSK
+// * ========== Event Listeners ========== * \\
+// EVENT LISTENER: Listens for a scroll on the window of the screen to fill the progress bar
+window.addEventListener("scroll", fillProgressBar);
 ```
 
 🔻
@@ -424,7 +792,13 @@ eventListenerButton.addEventListener("mouseenter", changeBgToRandom);
 - [ ] **TSK**
 
 ```jsx
-// TSK
+// * ========== Function Declarations ========== * \\
+// FUNCTION: Fills the progress bar
+function fillProgressBar() {
+  const windowHeight = window.innerHeight;
+  const fullHeight = document.body.clientHeight;
+  const scrolled = window.scrollY;
+}
 ```
 
 🔻
@@ -432,15 +806,18 @@ eventListenerButton.addEventListener("mouseenter", changeBgToRandom);
 - [ ] **TSK**
 
 ```jsx
-// TSK
-```
+// FUNCTION: Fills the progress bar
+function fillProgressBar() {
+  // . . .
 
-🔻
+  const percentScrolled = (scrolled / (fullHeight - windowHeight)) * 100;
 
-- [ ] **TSK**
+  percentScrolled > 25
+    ? (progressBar.style.display = "block")
+    : (progressBar.style.display = "none");
 
-```jsx
-// TSK
+  progressBar.value = percentScrolled;
+}
 ```
 
 🔻

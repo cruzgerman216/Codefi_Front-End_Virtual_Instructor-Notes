@@ -1,6 +1,7 @@
 // * ========== HTML Element Selectors ========== * \\
+
 // * ========== Function Declarations ========== * \\
-// FUNCTION: TSK
+// FUNCTION:
 
 // * ========== Event Listeners ========== * \\
-// EVENT LISTENER: TSK
+// EVENT LISTENER:
