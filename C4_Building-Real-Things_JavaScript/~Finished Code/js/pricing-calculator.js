@@ -1,14 +1,14 @@
 // * ========== HTML Element Selectors ========== * \\
 const priceInput = document.querySelector("#price");
 const quantityInput = document.querySelector("#quantity");
-const totalPriceInput = document.querySelector(".total-price");
+const totalPriceDisplay = document.querySelector(".total-price");
 const quantityLabel = document.querySelector(".quantity-label");
 
 // * ========== Function Declarations ========== * \\
 // FUNCTION: Calculate total Cost
 function calculateTotalCost() {
   const total = priceInput.value * quantityInput.value;
-  totalPriceInput.innerText = `$${total.toFixed(2)}`;
+  totalPriceDisplay.innerText = `$${total.toFixed(2)}`;
 }
 
 // FUNCTION: Update Quantity Label

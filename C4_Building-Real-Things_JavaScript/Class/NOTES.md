@@ -20,9 +20,9 @@ By the end of this lesson, you will be able to:
 
 ### CONCEPTS
 
-- **DOM:** _TSK_ is tsk
+- **DOM:** The _DOM_ or _Document Object Model_ is tsk
 
-- **TSK:** _TSK_ is tsk
+- **Event Listener:** An _event listener_ is tsk
 
 ---
 
@@ -38,9 +38,9 @@ By the end of this lesson, you will be able to:
 
 | _./dom.html_ |
 
-- [ ] **Add an onclick event to the first button**
-  - Walk through the code we have
-  - Add an onclick event to call a function in JavaScript to update the background
+- [ ] **Add an `onclick` event to the first button**
+  - Walkthrough the code we have
+  - Add an `onclick` event to call a function in JavaScript to update the background
 
 ```html
 <!-- Button 1: inline HTML -->
@@ -55,7 +55,7 @@ By the end of this lesson, you will be able to:
   - Create a new function
   - Inside that function, change the `body.style.backgroundColor` to "#bae6fd"
 
-- _NOTE_: it is cleanest to have all the functionality in JavaSciprt (seperation of concerns)
+- _NOTE_: it is cleanest to have all the functionality in JavaSciprt (separation of concerns)
 
 ```jsx
 // * Inline HTML * \\
@@ -98,9 +98,9 @@ javascriptMultipleButtons.forEach((button) => {
 
 🔻
 
-- [ ] **Code a function to chnage the background to a random color**
-  - Create a function that generates a random hexidecimal value
-  - Set the documents body's backgroiund color to the random value
+- [ ] **Code a function to change the background to a random color**
+  - Create a function that generates a random hexadecimal value
+  - Set the documents body's background color to the random value
 
 ```jsx
 // * JavaScript Event listener * \\
@@ -133,11 +133,11 @@ eventListenerButton.addEventListener("mouseenter", changeBgToRandom);
 
 🔻
 
-**Check**: Make sure each button does what we expect
+**Check**: Ensure each button does what we expect
 
 - Does the first button change the background color to "#bae6fd"?
-- Does the second, third, and fourth button change the color to "#a7f3d0"?
-- Does the fifth button change the background to a random color on hover and on click?
+- Do the second, third, and fourth buttons change the color to "#a7f3d0"?
+- Does the fifth button change the background to a random color on hover and mouse click?
 
 ---
 
@@ -147,11 +147,10 @@ eventListenerButton.addEventListener("mouseenter", changeBgToRandom);
 
 | _./pricing-calculator.html_ |
 
-   <!-- - Create a section with a heading an a form -->
-   <!-- - The form should have a price label + input, and qunaityt -->
-   <!-- - Create the display for the form data outside the form -->
-
-- [ ] **TSK**
+- [ ] **Build out the HTML**
+  - Create an input + label for the price
+  - Create an input + label for the quantity
+  - Below the form, create a place to display the total price
 
 ```html
 <!-- * MAIN CONTENT * -->
@@ -192,25 +191,23 @@ eventListenerButton.addEventListener("mouseenter", changeBgToRandom);
 
 | _./pricing-calculator.js_ |
 
- <!-- - Grab all of the HTML elements we will need
-     - price input
-     - quantity input
-     - data display paragraph -->
-
-- [ ] **TSK**
+- [ ] **Establish the Element Selectors**
+  - Create a variable for the price input
+  - Create a variable for the quantity input
+  - Create a variable for the total price display
 
 ```jsx
 // * ========== HTML Element Selectors ========== * \\
 const priceInput = document.querySelector("#price");
 const quantityInput = document.querySelector("#quantity");
-const totalPriceInput = document.querySelector(".total-price");
+const totalPriceDisplay = document.querySelector(".total-price");
 ```
 
 🔻
 
-   <!-- - Add our event listeners -->
-
-- [ ] **TSK**
+- [ ] **Initiate the Event Listeners**
+  - Create an event listener for the price input change that calls the `calculateTotalCost` function
+  - Create an event listener for the quanitity input change that calls the `calculateTotalCost` function
 
 ```jsx
 // * ========== Event Listeners ========== * \\
@@ -223,26 +220,23 @@ quantityInput.addEventListener("input", calculateTotalCost);
 
 🔻
 
-<!--
-   - Create the functions we will need
-     - console log the values first -->
-
-- [ ] **TSK**
+- [ ] **Declare the Functions**
+  - Create a variable that holds the total price
+  - Check this value in the console
+  - Display this total to the webpage
 
 ```jsx
 // * ========== Function Declarations ========== * \\
 // FUNCTION: Calculate total Cost
 function calculateTotalCost() {
   const total = priceInput.value * quantityInput.value;
-  totalPriceInput.innerText = `$${total.toFixed(2)}`;
+  totalPriceDisplay.innerText = `$${total.toFixed(2)}`;
 }
 ```
 
 🔻
 
-   <!-- - Run our function on application start to popluate the HTML -->
-
-- [ ] **TSK**
+- [ ] **Generate the Total Cost on Application Start**
 
 ```jsx
 // * ========== Application Start ========== * \\
@@ -252,9 +246,11 @@ calculateTotalCost();
 
 🔻
 
-   <!-- - Update the Quanity Label -->
-
-- [ ] **TSK**
+- [ ] **Construct a Quantity Label**
+  - Create a variable that represents the quantity label paragraph
+  - Create a function that uses the quantity inputs value to set the innerText
+  - Add an event listener to the input that updates the quantity label
+  - Call the function on application load
 
 ```jsx
 // * ========== HTML Element Selectors ========== * \\
@@ -285,9 +281,10 @@ updateQuantityLabel();
 
 🔻
 
-**Check**: TSK
+**Check**: Ensure the math is correct
 
-- TSK
+- Does the total price show $100 for a price of $50 and a quantity of 2?
+- Does the total price show $625 for a price of $25 and a quantity of 25?
 
 ---
 
@@ -297,9 +294,8 @@ updateQuantityLabel();
 
 | _./crazy-buttons.html_ |
 
-<!-- - Create a section with a button, give it a class and atype of button -->
-
-- [ ] **TSK**
+- [ ] **Build out the HTML**
+  - Create a section which contains a button of type button
 
 ```html
 <!-- * MAIN CONTENT * -->
@@ -316,7 +312,8 @@ updateQuantityLabel();
 
 | _./crazy-buttons.js_ |
 
-- [ ] **TSK**
+- [ ] **Establish the Element Selectors**
+  - Create a variable `crazyButton` that stores a reference to the HTML button
 
 ```jsx
 // * ========== HTML Element Selectors ========== * \\
@@ -325,7 +322,8 @@ const crazyButton = document.querySelector(".crazy-button");
 
 🔻
 
-- [ ] **TSK**
+- [ ] **Initiate the Event Listeners**
+  - Add an Event Listener to the "crazyButton" that calls a `goBtnWild` function on "mouseenter"
 
 ```jsx
 // * ========== Event Listeners ========== * \\
@@ -335,7 +333,10 @@ crazyButton.addEventListener("mouseenter", goBtnWild);
 
 🔻
 
-- [ ] **TSK**
+- [ ] **Declare the Functions**
+  - Create the `goBtnWild` function
+  - Get a random position inside of the user's window for height
+  - Get a random position inside of the user's window for width
 
 ```jsx
 // * ========== Function Declarations ========== * \\
@@ -350,7 +351,8 @@ function goBtnWild() {
 
 🔻
 
-- [ ] **TSK**
+- [ ] **Add Functionality**
+  - Use those offsets to change the `style` properties on the `crazyBtn`
 
 ```jsx
 // * ========== Function Declarations ========== * \\
@@ -368,9 +370,9 @@ function goBtnWild() {
 
 🔻
 
-**Check**: TSK
+**Check**: Ensure the button runs away from the mouse
 
-- TSK
+- Can you click the button?
 
 ---
 
@@ -378,11 +380,11 @@ function goBtnWild() {
 
 **Aim**: Create a stopwatch using JavaScript with start, stop, and reset buttons
 
-   <!-- - Create a section with a timer, and two timer buttons -->
-
 | _./stopwatch.html_ |
 
-- [ ] **TSK**
+- [ ] **Build out the HTML**
+  - Create a section to display the timer's time
+  - Create a section that holds the three buttons (start, stop, reset)
 
 ```html
 <!-- * MAIN CONTENT * -->
@@ -414,10 +416,8 @@ function goBtnWild() {
 
 | _./stopwatch.js_ |
 
-<!--    - Grab all what we need
- -->
-
-- [ ] **TSK**
+- [ ] **Establish the Element Selectors**
+  - Grab all the elements we need from the HTML and store them in their respective variables
 
 ```jsx
 // * ========== HTML Element Selectors ========== * \\
@@ -430,9 +430,8 @@ const secondsDisplay = document.querySelector(".seconds");
 
 🔻
 
-   <!-- - Create Event Listeners -->
-
-- [ ] **TSK**
+- [ ] **Initiate the Event Listeners**
+  - Create event listeners for the start, stop, and reset buttons that call their respective functions on "click"
 
 ```jsx
 // * ========== Event Listeners ========== * \\
@@ -448,9 +447,7 @@ resetButton.addEventListener("click", resetTimer);
 
 🔻
 
-   <!-- - Define Functions -->
-
-- [ ] **TSK**
+- [ ] **Declare the Functions**
 
 ```jsx
 // * ========== Function Declarations ========== * \\
@@ -466,9 +463,7 @@ function resetTimer() {}
 
 🔻
 
-   <!-- - Define timer time variable -->
-
-- [ ] **TSK**
+- [ ] **Define the Global Variables**
 
 ```jsx
 // * ========== Global Variables ========== * \\
@@ -477,9 +472,7 @@ let currTime = 0;
 
 🔻
 
-   <!-- - Application start interval -->
-
-- [ ] **TSK**
+- [ ] **Start an Interval when the `startTimer` function is called**
 
 ```jsx
 // FUNCTION: Starts the timer
@@ -499,10 +492,7 @@ function startTimer() {
 
 🔻
 
-   <!-- -    - Calclute number of minutes and seconds to display
- -->
-
-- [ ] **TSK**
+- [ ] **Calculate & Display the formatted time in the browser**
 
 ```jsx
 // FUNCTION: Helper Function to format time into proper text
@@ -525,11 +515,7 @@ function displayFormattedTime(minutes, seconds) {
 
 🔻
 
-   <!-- -      - Seperate the interval into it's own function
-
- -->
-
-- [ ] **TSK**
+- [ ] **Refactor your solution**
 
 ```jsx
 // FUNCTION: Start an Interval that increases the global timer variable by 1 every second
@@ -547,10 +533,11 @@ function incrementTime() {
 
 🔻
 
-   <!-- -         - Add logic to main functions
- -->
-
-- [ ] **TSK**
+- [ ] **Add Logic to the Functions**
+  - Create two new global variables
+  - Check if the timer is running and have code dependant on that state
+  - Set and Clear the interval in the start and stop functions
+  - Have the reset function stop the timer and reset the inputs
 
 ```jsx
 // * ========== Global Variables ========== * \\
@@ -588,9 +575,11 @@ function resetTimer() {
 
 🔻
 
-**Check**: TSK
+**Check**: Ensure the stopwatch works as intended
 
-- TSK
+- Can you start the stopwatch?
+- When you pause a running stopwatch and start again, does the counter increase at a normal pace?
+- When you click the reset button, does the input look the same as if you refreshed the page?
 
 ---
 
@@ -600,9 +589,8 @@ function resetTimer() {
 
 | _./accordion.html_ |
 
-   <!-- - Create a section with a accordion article with detials and summary tags -->
-
-- [ ] **TSK**
+- [ ] **Build out the HTML**
+  - Create an article that holds three `<details>` tags and their `<summary>` & `<p>` content
 
 ```html
 <!-- * MAIN CONTENT * -->
@@ -642,7 +630,7 @@ function resetTimer() {
 
 | _./accordion.css_ |
 
-- [ ] **TSK**
+- [ ] **Style the Container**
 
 ```css
 .accordion-container {
@@ -655,7 +643,7 @@ function resetTimer() {
 
 🔻
 
-- [ ] **TSK**
+- [ ] **Style the Toggles & Content**
 
 ```css
 details {
@@ -685,9 +673,10 @@ details p {
 
 🔻
 
-**Check**: TSK
+**Check**: Ensure the menu's toggle
 
-- TSK
+- Can you click on the element to open its summary and content?
+- Can you tab through the menu effectively?
 
 ---
 
@@ -697,9 +686,8 @@ details p {
 
 | _./scrolling-progress.html_ |
 
-<!-- - Create a progress bar in html -->
-
-- [ ] **TSK**
+- [ ] **Build out the HTML**
+  - Create the label and an HTML progress bar elements
 
 ```html
 <h1>Scrolling Progress Bar!</h1>
@@ -721,6 +709,9 @@ details p {
 | _./scrolling-progress.css_ |
 
 - [ ] **Walkthrough the CSS**
+  - Talk about the blog post container styles
+  - Show the progress bar styles
+  - Talk about accessibility and the "sr-only" class
 
 ```css
 /* * Scrolling Progress * */
@@ -770,7 +761,7 @@ progress[value]::-webkit-progress-bar {
 
 | _./scrolling-progress.js_ |
 
-- [ ] **TSK**
+- [ ] **Establish the Element Selectors**
 
 ```jsx
 // * ========== HTML Element Selectors ========== * \\
@@ -779,7 +770,7 @@ const progressBar = document.querySelector("#progress-bar");
 
 🔻
 
-- [ ] **TSK**
+- [ ] **Initiate the Event Listeners**
 
 ```jsx
 // * ========== Event Listeners ========== * \\
@@ -789,7 +780,7 @@ window.addEventListener("scroll", fillProgressBar);
 
 🔻
 
-- [ ] **TSK**
+- [ ] **Declare the Function**
 
 ```jsx
 // * ========== Function Declarations ========== * \\
@@ -803,7 +794,8 @@ function fillProgressBar() {
 
 🔻
 
-- [ ] **TSK**
+- [ ] **Add Conditional Styles**
+  - Only display the progress bar if we are over 25% scrolled
 
 ```jsx
 // FUNCTION: Fills the progress bar
@@ -822,9 +814,11 @@ function fillProgressBar() {
 
 🔻
 
-**Check**: TSK
+**Check**: Ensure the progress bar presents accurate data
 
-- TSK
+- Does the progress bar stick to the top of the screen?
+- Does the progress bar show 100% complete at the bottom of the page?
+- Does the progress bar disappear when you are at the top of the page?
 
 ---
 
@@ -844,9 +838,9 @@ _Good on you!_
 
 Specifically, we learned how to:
 
-- TSK
-- TSK
-- TSK
+- Work with the DOM and use DOM Events to run JavaScript code
+- Add HTML semantic elements for forms, content, and structure
+- Work with new CSS selectors and properties to effectively add styles to our website
 
 ---
 
