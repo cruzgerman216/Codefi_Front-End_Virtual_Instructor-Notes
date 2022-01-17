@@ -9,7 +9,7 @@ const linkList = document.querySelector(".link-list");
 // * ========== Global Variables ========== * \\
 const allLinks = JSON.parse(localStorage.getItem("link_list")) || [];
 
-const API_URL = "https://opengraph.io/api/1.1/site";
+const BASE_URL = "https://opengraph.io/api/1.1/site";
 const API_KEY = "fdcc299a-6adc-43d0-ac90-1674c1cbadf5";
 
 // * ========== Function Declarations ========== * \\
@@ -90,7 +90,7 @@ function saveLinkListToLocalStorage(links = []) {
 // FUNCTION: Grabs data from Open Graph API
 async function fetchURLMetaData(url) {
   const res = await fetch(
-    `${API_URL}/${encodeURIComponent(url)}?app_id=${API_KEY}`
+    `${BASE_URL}/${encodeURIComponent(url)}?app_id=${API_KEY}`
   );
 
   const data = await res.json();

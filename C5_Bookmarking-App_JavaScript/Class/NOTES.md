@@ -244,14 +244,91 @@ input.addEventListener("focusout", endFocus);
 
 ### STEP 2: SHOWING BOOKMARKS
 
-**Aim**: TSK
+**Aim**: Dynamically display a list of links
 
-| _TSK_ |
+| _./index.html_ |
+
+- [ ] **Create a place for an HTML list to live**
+
+```html
+<!-- Link List -->
+<ul class="link-list">
+  <!-- <li>
+          <a class="link" href="/">This is a test link</a>
+        </li>
+        <li>
+          <a class="link" href="/">This is a test link</a>
+        </li> -->
+</ul>
+```
+
+🔻
+
+- [ ] **Style the link list container**
+
+```css
+.link-list {
+  position: relative;
+  width: clamp(275px, 50%, 700px);
+  margin: 2em auto 0 auto;
+  padding: 0 0 5em 0;
+}
+```
+
+🔻
+
+- [ ] **Style the list item and link**
+
+```css
+.link-list li {
+  position: relative;
+  width: 100%;
+  margin: 2em 0;
+  background-color: #0c4a6e;
+  border-radius: 8px;
+  box-shadow: 0px 8px 17px 2px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12),
+    0px 5px 5px -3px rgba(0, 0, 0, 0.2);
+
+  transition: 350ms ease all;
+}
+
+.link {
+  display: block;
+  color: #f0f9ff;
+  text-decoration: none;
+  font-size: 1.75rem;
+  padding: 1.75em 0;
+  cursor: pointer;
+}
+```
+
+🔻
+
+- [ ] **Add Hover Styles**
+
+```css
+.link-list li:hover,
+.link-list li:focus {
+  background-color: #0369a1;
+  box-shadow: 0px 16px 24px 2px rgba(0, 0, 0, 0.14), 0px 6px 30px 5px rgba(0, 0, 0, 0.12),
+    0px 8px 10px -7px rgba(0, 0, 0, 0.2);
+}
+```
+
+- Comment out the dummy list items in the HTML
+
+🔻
+
+| _./app.js_ |
 
 - [ ] **TSK**
 
 ```jsx
+// * ========== HTML Element Selectors ========== * \\
+// . . .
 
+const form = document.querySelector("#link-form");
+const linkList = document.querySelector(".link-list");
 ```
 
 🔻
@@ -259,17 +336,11 @@ input.addEventListener("focusout", endFocus);
 - [ ] **TSK**
 
 ```jsx
+// _ ========== Event Listeners ========== _ \\
+// . . .
 
-```
-
-🔻
-
-| _TSK_ |
-
-- [ ] **TSK**
-
-```jsx
-// TSK
+// EVENT LISTENER: Listens for "submit" event on the "form" and runs the "createLink" function
+form.addEventListener("submit", createLink);
 ```
 
 🔻
@@ -277,7 +348,15 @@ input.addEventListener("focusout", endFocus);
 - [ ] **TSK**
 
 ```jsx
-// TSK
+// _ ========== Function Declarations ========== _ \\
+// FUNCTION: Creates a new Link when a URL is submitted
+function createLink(e) {
+  // prevents the form from submitting
+  e.preventDefault();
+
+  // Grab info from input box
+  const url = input.value;
+}
 ```
 
 🔻
@@ -285,15 +364,26 @@ input.addEventListener("focusout", endFocus);
 - [ ] **TSK**
 
 ```jsx
-// TSK
-```
+function createLink(e) {
+  // . . .
 
-🔻
+  // Create a new bookmark
+  const linkContainer = document.createElement("li");
+  const newLink = document.createElement("a");
+  newLink.className = "link";
+  newLink.innerText = url;
+  newLink.href = url;
+  newLink.target = "_blank";
 
-- [ ] **TSK**
+  // console.log("newLink:", newLink);
 
-```jsx
-// TSK
+  // Dynamically insert into HTML
+  linkContainer.appendChild(newLink);
+  linkList.appendChild(linkContainer);
+
+  // Reset the input box
+  form.reset();
+}
 ```
 
 🔻
@@ -306,56 +396,96 @@ input.addEventListener("focusout", endFocus);
 
 ### STEP 3: LOCAL STORAGE
 
-**Aim**: TSK
+**Aim**: Save the link list in local storage and pull in data on application load
 
-| _TSK_ |
+| _./app.js_ |
 
-- [ ] **TSK**
+- [ ] **Create the Bookmarks array**
 
 ```jsx
-
+// _ ========== Global Variables ========== _ \\
+const allLinks = [];
 ```
 
 🔻
 
-- [ ] **TSK**
+- [ ] **Push the url everytime a user adds a link**
 
 ```jsx
+// FUNCTION: Creates a new Link when a URL is submitted
+function createLink(e) {
+  // . . .
 
+  // Add new Link to allLinks array
+  allLinks.push(url);
+
+  // . . .
+}
 ```
 
 🔻
 
-| _TSK_ |
-
-- [ ] **TSK**
+- [ ] **Refactor solution to loop over the links one by one**
 
 ```jsx
-// TSK
+// . . .
+
+// Repopulate HTML List
+populateLinkList(allLinks);
+
+// . . .
+}
+
+// . . .
+
+// FUNCTION: Populates HTML with a list of Bookmarks
+function populateLinkList(links = []) {
+  // Loop over all links and create a new bookmark for each element
+  linkList.innerHTML = links
+    .map(
+      (link) =>
+        ` <li> <a class="link" href=${link} target="_blank" >${link}</a> </li>`
+    )
+    .join("");
+}
 ```
 
 🔻
 
-- [ ] **TSK**
+- [ ] **Save the new links to localStorage**
 
 ```jsx
-// TSK
+function createLink(e) {
+  // . . .
+
+  // Save List to Local Storage
+  saveLinkListToLocalStorage(allLinks);
+
+  // . . .
+}
+
+// . . .
+
+// FUNCTION: Saves Link List in Local Storage
+function saveLinkListToLocalStorage(links = []) {
+  localStorage.setItem("link_list", JSON.stringify(links));
+}
 ```
 
 🔻
 
-- [ ] **TSK**
+- [ ] **Pull from localStorage on application Load**
+  - Call the `populateLinkList(allLinks)` on application load
+  - Populate `allLinks` array with localStorage if available
 
 ```jsx
-// TSK
-```
+// _ ========== Global Variables ========== _ \\
+const allLinks = JSON.parse(localStorage.getItem("link_list")) || [];
 
-🔻
+// . . .
 
-- [ ] **TSK**
-
-```jsx
-// TSK
+// _ ========== On Application Start ========== _ \\
+populateLinkList(allLinks);
 ```
 
 🔻
@@ -368,56 +498,107 @@ input.addEventListener("focusout", endFocus);
 
 ### STEP 4: DELETING BOOKMARKS
 
-**Aim**: TSK
+**Aim**: Add the functionality to delete bookmarks
 
-| _TSK_ |
+| _./styles.css_ |
 
-- [ ] **TSK**
+- [ ] **Style the close button**
+  - Add the styles for the close button
+  - Add `position: relative` to the main list item
+  - Add the close button hover and focus states
 
-```jsx
+```css
+.link-list li {
+  position: relative;
+  // . . .
+}
 
+// . . .
+
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  border-radius: 50%;
+  padding: 0.5em 0.75em;
+  border: none;
+  color: #075985;
+  background-color: #e0f2fe;
+  opacity: 0.6;
+  cursor: pointer;
+  transition: 300ms ease all;
+}
+.close-btn:hover,
+.close-btn:focus {
+  opacity: 1;
+  transform: scale(1.1);
+}
 ```
 
 🔻
 
-- [ ] **TSK**
+| _./app.js_ |
+
+- [ ] **Add the close button whenever generating a new link item**
+  - Add the close button
+  - Add the data index property
 
 ```jsx
-
+function populateLinkList(links = []) {
+  // Loop over all links and create a new bookmark for each element
+  linkList.innerHTML = links
+    .map(
+      (link, idx) => `
+      <li data-index=${idx}>
+        <a class="link" href=${link.url} target="_blank" >${link.title}</a>
+        <button class="close-btn">&times;</button>
+      </li>`
+    )
+    .join("");
+}
 ```
 
 🔻
 
-| _TSK_ |
-
-- [ ] **TSK**
+- [ ] **Listen for a "click" on the Link List**
 
 ```jsx
-// TSK
+// _ ========== Event Listeners ========== _ \\
+// . . .
+
+// EVENT LISTENER: Listens for "click" event on the "linkList" and runs the "removeLink" function
+linkList.addEventListener("click", removeLink);
 ```
 
 🔻
 
-- [ ] **TSK**
+- [ ] **Add the Logic to remove a list item based on index**
+  - Ensure we are clicking on the "x"
+  - Find the index of the element
+  - Remove the link from the list
+  - Repopulate the list
+  - Save to localStorage
 
 ```jsx
-// TSK
-```
+// FUNCTION: Removes a new Link when a link is deleted
+function removeLink(e) {
+  // If we are not clicking on the "x"... don't run any more code
+  if (!e.target.matches(".close-btn")) return;
 
-🔻
+  // Find the index
+  const idx = e.target.parentNode.dataset.index;
 
-- [ ] **TSK**
+  console.log("idx:", idx);
 
-```jsx
-// TSK
-```
+  // remove the link from the list
+  allLinks.splice(idx, 1);
 
-🔻
+  // refill the list
+  populateLinkList(allLinks);
 
-- [ ] **TSK**
-
-```jsx
-// TSK
+  // save to local storage
+  saveLinkListToLocalStorage(allLinks);
+}
 ```
 
 🔻
@@ -430,56 +611,110 @@ input.addEventListener("focusout", endFocus);
 
 ### STEP 5: FETCHING DATA
 
-**Aim**: TSK
+**Aim**: Fetch Data from the URL's saved to dynamically populate the title and url
 
-| _TSK_ |
+- [Create an OpenGraph API Account](https://www.opengraph.io/)
 
-- [ ] **TSK**
+| _./app.js_ |
+
+- [ ] **Create Global Variables**
+  - Create a global variable to store the BASE_URL
+  - Create a global variable to store the API_KEY
 
 ```jsx
+// * ========== Global Variables ========== * \\
+// . . .
 
+const BASE_URL = "https://opengraph.io/api/1.1/site";
+const API_KEY = "fdcc299a-6adc-43d0-ac90-1674c1cbadf5";
 ```
 
 🔻
 
-- [ ] **TSK**
+- [ ] **Create an Asynchronous Fetch Function**
+  - Call the OpenGraph API using a passed in "url"
+  - Return the title, image, and url
 
 ```jsx
+// FUNCTION: Grabs data from Open Graph API
+async function fetchURLMetaData(url) {
+  const res = await fetch(
+    `${BASE_URL}/${encodeURIComponent(url)}?app_id=${API_KEY}`
+  );
 
+  const data = await res.json();
+
+  // Validation
+  if (data.code < 0 || data.code >= 300) alert("Error with that URL");
+
+  return { title: data.hybridGraph.title, image: data.hybridGraph.image, url };
+}
 ```
 
 🔻
 
-| _TSK_ |
-
-- [ ] **TSK**
+- [ ] **Refactor the `createLink()` function**
+  - Transform into an `async` function
+  - Await the response fromt the method we just created
+  - Rearrange the logic flow
 
 ```jsx
-// TSK
+// FUNCTION: Creates a new Link when a URL is submitted
+async function createLink(e) {
+  // prevents the form from submitting
+  e.preventDefault();
+
+  // Validation
+  if (!input.value) return;
+
+  // Grab data from the websites metadata
+  const link = await fetchURLMetaData(input.value);
+
+  // Add the link to the linkList
+  allLinks.push(link);
+
+  // Repopulate HTML List
+  populateLinkList(allLinks);
+
+  // Save List to Local Storage
+  saveLinkListToLocalStorage(allLinks);
+
+  // Reset the input box
+  form.reset();
+}
 ```
 
 🔻
 
-- [ ] **TSK**
+- [ ] **Add Validation**
+  - Ensure we have a proper response from the API Response
+  - Ensure we have text inside the input
 
 ```jsx
-// TSK
-```
+// FUNCTION: Creates a new Link when a URL is submitted
+async function createLink(e) {
+  // prevents the form from submitting
+  e.preventDefault();
 
-🔻
+  // Validation
+  if (!input.value) return;
 
-- [ ] **TSK**
+  // . . .
+}
 
-```jsx
-// TSK
-```
+// . . .
 
-🔻
+// FUNCTION: Grabs data from Open Graph API
+async function fetchURLMetaData(url) {
+  // . . .
 
-- [ ] **TSK**
+  const data = await res.json();
 
-```jsx
-// TSK
+  // Validation
+  if (data.code < 0 || data.code >= 300) alert("Error with that URL");
+
+  // . . .
+}
 ```
 
 🔻
