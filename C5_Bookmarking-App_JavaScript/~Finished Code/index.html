@@ -17,7 +17,7 @@
       <div class="overlay"></div>
 
       <!-- Input Form -->
-      <form>
+      <form id="link-form">
         <label for="link" class="sr-only">Enter Your Link</label>
         <input
           class="link-input"
@@ -26,8 +26,20 @@
           name="link"
           placeholder="What did you find?"
         />
-        <button class="btn" aria-label="Add new link">&plus;</button>
+        <button type="submit" class="btn" aria-label="Add new link">
+          &plus;
+        </button>
       </form>
+
+      <!-- Link List -->
+      <ul class="link-list">
+        <!-- <li>
+          <a class="link" href="/">This is a test link</a>
+        </li>
+        <li>
+          <a class="link" href="/">This is a test link</a>
+        </li> -->
+      </ul>
     </main>
 
     <!-- * JAVASCRIPT * -->

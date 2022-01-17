@@ -60,7 +60,7 @@ By the end of this lesson, you will be able to:
       <div class="overlay"></div>
 
       <!-- Input Form -->
-      <form>
+      <form id="link-form">
         <label for="link" class="sr-only">Enter Your Link</label>
         <input
           class="link-input"
@@ -69,7 +69,9 @@ By the end of this lesson, you will be able to:
           name="link"
           placeholder="What did you find?"
         />
-        <button class="btn" aria-label="Add new link">&plus;</button>
+        <button type="submit" class="btn" aria-label="Add new link">
+          &plus;
+        </button>
       </form>
     </main>
 
@@ -92,7 +94,7 @@ By the end of this lesson, you will be able to:
 .container {
   text-align: center;
   background: url("./images/night-sky_bg.jpg") no-repeat center/cover;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
 }
 ```
@@ -192,7 +194,7 @@ const overlay = document.querySelector(".overlay");
 // * ========== Event Listeners ========== * \\
 // EVENT LISTENER: Listens for "focus" event on the "input" and runs the "focusInput" function
 input.addEventListener("focus", focusInput);
-// EVENT LISTENER: Listens for "" event on the "overlay" and runs the "endFocus" function
+// EVENT LISTENER: Listens for "click" event on the "overlay" and runs the "endFocus" function
 overlay.addEventListener("click", endFocus);
 ```
 
@@ -204,12 +206,12 @@ overlay.addEventListener("click", endFocus);
 
 ```jsx
 // * ========== Function Declarations ========== * \\
-// FUNCTION:
+// FUNCTION: Adds the "focus-form" class on the body when the form is in focus
 function focusInput() {
   body.classList.add("focus-form");
 }
 
-// FUNCTION:
+// FUNCTION: Removes the "focus-form" class on the body when the form is out of focus
 function endFocus() {
   if (body.classList.contains("focus-form"))
     body.classList.remove("focus-form");
