@@ -1,13 +1,5 @@
 # TEMP
 
-## Floating Input
-
-1.
-
----
-
----
-
 ## Showing Bookmarks
 
 1.
