@@ -18,7 +18,7 @@ By the end of this lesson, you will be able to:
 
 ### CONCEPTS
 
-- **Closures:** _TSK_ is tsk
+- **Closures:** _Closures_ are a combinations of functions bundled together that have references to their surrounding state. A closure gives you access to an outer function’s scope from an inner function, outside of its original usage.
 
 - **this:** The _this_ keyword in JavaScript is notorious for being difficult to explain. It ("this") refers to tsk
 

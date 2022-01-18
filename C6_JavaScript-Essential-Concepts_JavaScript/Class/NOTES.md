@@ -19,13 +19,13 @@ By the end of this lesson, you will be able to:
 
 ### CONCEPTS
 
-- **ECMAScript:** _ECMAScript_ is a standard the company _ECMA_ created of whichc JavaScript is built off of and continues to implement and improve upon. ECMA has been shortened to ES as in ES6 or ES7.
+- **ECMAScript:** _ECMAScript_ is a standard the company _ECMA_ created of which JavaScript is built from and continues to implement and improve upon. ECMA has been shortened to ES as in ES6 or ES7.
 
 - **Variable:** A _variable_ is a container that holds a value or piece of reusable data
 
 - **Scope:** _Scope_ in programming refers to the area or space where a specific element, data, variable, or value is useable. The two types of scope are _Local_ and _Global_.
 
-- **Hoisting:** _Hoisting_ means the movement of a variable or function to the top of their scope during it's execution
+- **Hoisting:** _Hoisting_ means the movement of a variable or function to the top of its scope during its execution
 
 ---
 
@@ -45,12 +45,12 @@ By the end of this lesson, you will be able to:
 ```jsx
 // ~ Variable Initialization ~ \\
 // This occurs when a variable is declared.
-// Here the variable is assigned a memory or space by the JavaScript engine.
-// Because of this, once a variable is declared, it takes a value of undefined even before assignment.
+// Here, the variable is assigned a memory or space by the JavaScript engine.
+// Because of this, once a variable is declared, it takes an undefined value even before assignment.
 
 var x; // Old way of declaring variables
-let y; // ES6+ way of declaring a variable which is mutable and can be changed
-const z = 0; // ES6+ way of declaring a variable which is immutable and cannot be changed
+let y; // ES6+ way of declaring a variable that is mutable and can be changed
+const z = 0; // ES6+ way of declaring a variable that is immutable and cannot be changed
 ```
 
 🔻
@@ -86,15 +86,15 @@ let blackDog; // This is the best way to name variables with several words (came
 // ❌ INVALID
 // let 1girl;   // No numbers at the start of a variable
 // let -girl;   // No special characters at the start of a variable
-// let ; 	      // No empty variable names
+// let ;        // No empty variable names
 // const test; // "const" variables must be defined
 ```
 
 🔻
 
 - [ ] **Assigning Variable Values**
-  - Assign 3 variables in the longhand and shorthand way
-  - Assign variables equal to mathmatical or string expressions
+  - Assign three variables in the longhand and shorthand way
+  - Assign variables equal to mathematical or string expressions
   - Try assigning the same variable to two different values
 
 ```jsx
@@ -182,7 +182,7 @@ console.log("testVariable outside function:", testVariable); // Check the value 
 - [ ] **Walkthrough Demo 3**
   - Create a boolean variable
   - Create a function that looks for a conditional to update the value of the boolean variable
-  - Call teh function
+  - Call the function
   - Print the variable to the console after calling the function and check the value
 
 ```jsx
@@ -215,8 +215,8 @@ console.log("isListening:", isListening); // true
 | _./hoisting.js_ |
 
 - [ ] **Walkthrough Demo 1**
-  - Delare a variable using `let` without assignment
-  - Create a functiont that redeclares and initializes a variable with the same name and print that to the console
+  - Declare a variable using `let` without assignment
+  - Create a function that redeclares and initializes a variable with the same name and print that to the console
   - Call the function and print the variable value after calling and compare your results
 
 ```jsx
@@ -239,8 +239,8 @@ console.log("someVar after function:", someVar); // undefined
 
 - [ ] **Walkthrough Demo 2**
   - Declare three variables in different locations
-  - Call a function you haven't declared
-  - Create the function and printn the values to all three variables inside to compare different hoisting mechanics in JS
+  - Call a function you have not declared
+  - Create the function and print the values to all three variables inside to compare different hoisting mechanics in JS
 
 ```jsx
 // ~ DEMO 2 START ~ \\
@@ -288,7 +288,7 @@ _Good on you!_
 
 Specifically, we learned how to:
 
-- Use the right variable for the right job
+- Use the correct variable for the right job
 - Understand the way _scope_ works inside of JavaScript
 - Practice hoisting in our applications
 
