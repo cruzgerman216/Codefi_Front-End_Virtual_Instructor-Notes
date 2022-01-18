@@ -30,17 +30,9 @@ By the end of this lesson, you will be able to:
 
 ### STEP 1: CLOSURES
 
-**Aim**: TSK
+**Aim**: Master the fundamentals of JavaScript Closures
 
-| _TSK_ |
-
-- [ ] **TSK**
-
-```jsx
-
-```
-
-🔻
+| _./closures.js_ |
 
 - [ ] **TSK**
 
@@ -50,7 +42,13 @@ By the end of this lesson, you will be able to:
 
 🔻
 
-| _TSK_ |
+- [ ] **TSK**
+
+```jsx
+
+```
+
+🔻
 
 - [ ] **TSK**
 
@@ -84,7 +82,7 @@ By the end of this lesson, you will be able to:
 
 🔻
 
-**Check**: TSK
+**Check**: Ensure your understanding of JS Closures
 
 - TSK
 
@@ -92,17 +90,9 @@ By the end of this lesson, you will be able to:
 
 ### STEP 2: OBJECTS
 
-**Aim**: TSK
+**Aim**: Master the fundamentals of JavaScript Objects
 
-| _TSK_ |
-
-- [ ] **TSK**
-
-```jsx
-
-```
-
-🔻
+| _./objects-and-arrays.js_ |
 
 - [ ] **TSK**
 
@@ -112,7 +102,13 @@ By the end of this lesson, you will be able to:
 
 🔻
 
-| _TSK_ |
+- [ ] **TSK**
+
+```jsx
+
+```
+
+🔻
 
 - [ ] **TSK**
 
@@ -146,7 +142,7 @@ By the end of this lesson, you will be able to:
 
 🔻
 
-**Check**: TSK
+**Check**: Ensure your understanding of JS Objects
 
 - TSK
 
@@ -154,17 +150,9 @@ By the end of this lesson, you will be able to:
 
 ### STEP 3: ARRAYS
 
-**Aim**: TSK
+**Aim**: Master the fundamentals of JavaScript Arrays
 
-| _TSK_ |
-
-- [ ] **TSK**
-
-```jsx
-
-```
-
-🔻
+| _./objects-and-arrays.js_ |
 
 - [ ] **TSK**
 
@@ -174,7 +162,13 @@ By the end of this lesson, you will be able to:
 
 🔻
 
-| _TSK_ |
+- [ ] **TSK**
+
+```jsx
+
+```
+
+🔻
 
 - [ ] **TSK**
 
@@ -208,7 +202,7 @@ By the end of this lesson, you will be able to:
 
 🔻
 
-**Check**: TSK
+**Check**: Ensure your understanding of JavaScript Arrays
 
 - TSK
 
@@ -216,17 +210,9 @@ By the end of this lesson, you will be able to:
 
 ### STEP 4: THIS KEYWORD
 
-**Aim**: TSK
+**Aim**: Master the fundamentals of the JavaScript "_this_" keyword
 
-| _TSK_ |
-
-- [ ] **TSK**
-
-```jsx
-
-```
-
-🔻
+| _./this-keyword.js_ |
 
 - [ ] **TSK**
 
@@ -236,7 +222,13 @@ By the end of this lesson, you will be able to:
 
 🔻
 
-| _TSK_ |
+- [ ] **TSK**
+
+```jsx
+
+```
+
+🔻
 
 - [ ] **TSK**
 
@@ -270,7 +262,7 @@ By the end of this lesson, you will be able to:
 
 🔻
 
-**Check**: TSK
+**Check**: Ensure your understanding of the JavaScript "_this_" keyword
 
 - TSK
 
@@ -292,9 +284,9 @@ _Good on you!_
 
 Specifically, we learned how to:
 
-- TSK
-- TSK
-- TSK
+- Utilize the power of JavaScript Closures
+- Understand and apply objects and arrays in JavaScript
+- Demystify and harness the power of the "_this_" keyword
 
 ---
 

@@ -20,9 +20,15 @@ By the end of this lesson, you will be able to:
 
 ### CONCEPTS
 
-- **TSK:** _TSK_ is tsk
+- **Design Pattern:** A _design pattern_ is tsk
 
-- **TSK:** _TSK_ is tsk
+- **Asynchronous Code:** _Asynchronous code_ is tsk
+
+- **Memoization:** _Memoization_ is tsk
+
+- **Spread Operator:** The _spread operator_ is tsk
+
+- **Rest Operator:** The _rest operator_ is tsk
 
 ---
 
@@ -32,17 +38,9 @@ By the end of this lesson, you will be able to:
 
 ### STEP 1: DESIGN PATTERNS
 
-**Aim**: TSK
+**Aim**: Master the fundamentals of JavaScript Design Patterns
 
-| _TSK_ |
-
-- [ ] **TSK**
-
-```jsx
-
-```
-
-🔻
+| _./design-patterns.js_ |
 
 - [ ] **TSK**
 
@@ -52,7 +50,13 @@ By the end of this lesson, you will be able to:
 
 🔻
 
-| _TSK_ |
+- [ ] **TSK**
+
+```jsx
+
+```
+
+🔻
 
 - [ ] **TSK**
 
@@ -86,7 +90,7 @@ By the end of this lesson, you will be able to:
 
 🔻
 
-**Check**: TSK
+**Check**: Ensure your understanding of JavaScript Design Patterns
 
 - TSK
 
@@ -94,17 +98,9 @@ By the end of this lesson, you will be able to:
 
 ### STEP 2: CALLBACKS, PROMISES, ASYNC
 
-**Aim**: TSK
+**Aim**: Master the fundamentals of JavaScript Callbacks & Promises
 
-| _TSK_ |
-
-- [ ] **TSK**
-
-```jsx
-
-```
-
-🔻
+| _./callbacks-and-promises.js_ |
 
 - [ ] **TSK**
 
@@ -114,7 +110,13 @@ By the end of this lesson, you will be able to:
 
 🔻
 
-| _TSK_ |
+- [ ] **TSK**
+
+```jsx
+
+```
+
+🔻
 
 - [ ] **TSK**
 
@@ -148,7 +150,7 @@ By the end of this lesson, you will be able to:
 
 🔻
 
-**Check**: TSK
+**Check**: Ensure your understanding of JavaScript Callbacks & Promises
 
 - TSK
 
@@ -156,17 +158,9 @@ By the end of this lesson, you will be able to:
 
 ### STEP 3: ASYNC / AWAIT
 
-**Aim**: TSK
+**Aim**: Master the fundamentals of JavaScript Async / Await
 
-| _TSK_ |
-
-- [ ] **TSK**
-
-```jsx
-
-```
-
-🔻
+| _./async-await.js_ |
 
 - [ ] **TSK**
 
@@ -176,7 +170,13 @@ By the end of this lesson, you will be able to:
 
 🔻
 
-| _TSK_ |
+- [ ] **TSK**
+
+```jsx
+
+```
+
+🔻
 
 - [ ] **TSK**
 
@@ -210,7 +210,7 @@ By the end of this lesson, you will be able to:
 
 🔻
 
-**Check**: TSK
+**Check**: Ensure your understanding of JavaScript Async & Await
 
 - TSK
 
@@ -218,17 +218,9 @@ By the end of this lesson, you will be able to:
 
 ### STEP 4: MEMOIZATION
 
-**Aim**: TSK
+**Aim**: Master the fundamentals of JavaScript Memoization
 
-| _TSK_ |
-
-- [ ] **TSK**
-
-```jsx
-
-```
-
-🔻
+| _./memoization.js_ |
 
 - [ ] **TSK**
 
@@ -238,7 +230,13 @@ By the end of this lesson, you will be able to:
 
 🔻
 
-| _TSK_ |
+- [ ] **TSK**
+
+```jsx
+
+```
+
+🔻
 
 - [ ] **TSK**
 
@@ -272,7 +270,7 @@ By the end of this lesson, you will be able to:
 
 🔻
 
-**Check**: TSK
+**Check**: Ensure your understanding of JavaScript Memoization
 
 - TSK
 
@@ -280,17 +278,9 @@ By the end of this lesson, you will be able to:
 
 ### STEP 5: SPREAD VS. REST
 
-**Aim**: TSK
+**Aim**: Comprehend the differences of JavaScript Spread vs Rest
 
-| _TSK_ |
-
-- [ ] **TSK**
-
-```jsx
-
-```
-
-🔻
+| _./spread-vs-rest.js_ |
 
 - [ ] **TSK**
 
@@ -300,7 +290,13 @@ By the end of this lesson, you will be able to:
 
 🔻
 
-| _TSK_ |
+- [ ] **TSK**
+
+```jsx
+
+```
+
+🔻
 
 - [ ] **TSK**
 
@@ -334,7 +330,7 @@ By the end of this lesson, you will be able to:
 
 🔻
 
-**Check**: TSK
+**Check**: Ensure your understanding of JavaScript Spread Operator and it's difference to the JavaScript Rest Operator
 
 - TSK
 
@@ -356,9 +352,11 @@ _Good on you!_
 
 Specifically, we learned how to:
 
-- TSK
-- TSK
-- TSK
+- Structure our JavaScript applications using different design patterns
+- Create callbacks and promises in JavaScript
+- Use `async` and `await` keywords to code asynchronously
+- Comprehend _memoization_ in programming
+- Discern when to use the _spread operator_ and the _rest operator_
 
 ---
 
