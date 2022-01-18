@@ -2,3 +2,4 @@
 - [ ] Create PDF's
 - [ ] [Grammarly Check](https://app.grammarly.com/ddocs/1437237792)
 - [ ] Exercises
+- [ ] Practice pushing the code up to GitHub with them from class 6 onward!
