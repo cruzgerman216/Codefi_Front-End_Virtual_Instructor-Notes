@@ -18,9 +18,9 @@ By the end of this lesson, you will be able to:
 
 ### CONCEPTS
 
-- **Local Storage:** _Local Storage_ is tsk
+- **Local Storage:** _Local Storage_ is a type of web storage located in the browser that persists data even after page reload
 
-- **API:** An _API (Application Programming Interface)_ is tsk
+- **API:** An _API (Application Programming Interface)_ is a software intermediary that allows two applications to talk to each other
 
 ---
 
@@ -30,11 +30,11 @@ By the end of this lesson, you will be able to:
 
 ### STEP 1: FLOATING INPUT
 
-**Aim**: Create the main layout, styles and basic form functionality for the application
+**Aim**: Create the main layout, styles, and basic form functionality for the application
 
 | _./index.html_ |
 
-- [ ] **TSK**
+- [ ] **Build out the HTML**
   - Create a title
   - Create an overlay div
   - Create a form with a lable, input, and button
@@ -87,7 +87,7 @@ By the end of this lesson, you will be able to:
 
 - [ ] **Style the main container**
   - Add the container style to take full width & height
-  - Find an image on unsplash.com and save locally
+  - Find an image on unsplash.com and save it locally
   - Use the image to be a background for the page
 
 ```css
@@ -201,8 +201,8 @@ overlay.addEventListener("click", endFocus);
 🔻
 
 - [ ] **Declare the Functions**
-  - Create the `TSK` function
-  - Creat the `TSK` function
+  - Create the `focusInput` function
+  - Creat the `endFocus` function
 
 ```jsx
 // * ========== Function Declarations ========== * \\
@@ -235,10 +235,10 @@ input.addEventListener("focusout", endFocus);
 
 🔻
 
-**Check**: TSK
+**Check**: Ensure the input field is working correctly
 
 - Does the overlay take up the whole screen?
-- When you click or tab into the input, does the overlay show and the form get larger?
+  When you click or tab into the input, does the overlay show, and does the form gets larger?
 
 ---
 
@@ -321,7 +321,9 @@ input.addEventListener("focusout", endFocus);
 
 | _./app.js_ |
 
-- [ ] **TSK**
+- [ ] **Establish the Element Selectors**
+  - Create a variable for the form container
+  - Create a variable for the link-list container
 
 ```jsx
 // * ========== HTML Element Selectors ========== * \\
@@ -333,7 +335,8 @@ const linkList = document.querySelector(".link-list");
 
 🔻
 
-- [ ] **TSK**
+- [ ] **Initiate the Event Listeners**
+  - Create an event listener for the form submission that calls the `createLink` function
 
 ```jsx
 // _ ========== Event Listeners ========== _ \\
@@ -345,7 +348,8 @@ form.addEventListener("submit", createLink);
 
 🔻
 
-- [ ] **TSK**
+- [ ] **Declare the Functions**
+  - Create a function that creates a new link based on a URL
 
 ```jsx
 // _ ========== Function Declarations ========== _ \\
@@ -361,7 +365,12 @@ function createLink(e) {
 
 🔻
 
-- [ ] **TSK**
+- [ ] **Finish out the logic for the `createLink` function**
+  - Create a list item
+  - Create an anchor tag
+  - Add the innerText, href, and target attributes
+  - append the elements together
+  - reset the form
 
 ```jsx
 function createLink(e) {
@@ -388,9 +397,9 @@ function createLink(e) {
 
 🔻
 
-**Check**: TSK
+**Check**: Ensure adding a URL works correctly
 
-- TSK
+- Can you type a URL into the box and view it below the form?
 
 ---
 
@@ -409,7 +418,7 @@ const allLinks = [];
 
 🔻
 
-- [ ] **Push the url everytime a user adds a link**
+- [ ] **Push the URL every time a user adds a link**
 
 ```jsx
 // FUNCTION: Creates a new Link when a URL is submitted
@@ -490,9 +499,9 @@ populateLinkList(allLinks);
 
 🔻
 
-**Check**: TSK
+**Check**: Ensure localStorage is hooked up correctly
 
-- TSK
+- When you add a link, does it stay if you refresh the page?
 
 ---
 
@@ -603,15 +612,16 @@ function removeLink(e) {
 
 🔻
 
-**Check**: TSK
+**Check**: Ensure you can remove a link
 
-- TSK
+- If you have three list items and delete the middle, does only that item get deleted?
+- If you delete an item an/d refresh the page, is it still deleted from history?
 
 ---
 
 ### STEP 5: FETCHING DATA
 
-**Aim**: Fetch Data from the URL's saved to dynamically populate the title and url
+**Aim**: Fetch Data from the URL's saved to populate the title and URL dynamically
 
 - [Create an OpenGraph API Account](https://www.opengraph.io/)
 
@@ -633,7 +643,7 @@ const API_KEY = "fdcc299a-6adc-43d0-ac90-1674c1cbadf5";
 
 - [ ] **Create an Asynchronous Fetch Function**
   - Call the OpenGraph API using a passed in "url"
-  - Return the title, image, and url
+  - Return the title, image, and URL
 
 ```jsx
 // FUNCTION: Grabs data from Open Graph API
@@ -719,9 +729,9 @@ async function fetchURLMetaData(url) {
 
 🔻
 
-**Check**: TSK
+**Check**: Ensure the application can save links and add the correct data
 
-- TSK
+- If you add the link to "https://google.com," does the title say "Google," and does it load _google.com_ in a new tab on click?
 
 ---
 
@@ -741,9 +751,11 @@ _Good on you!_
 
 Specifically, we learned how to:
 
-- TSK
-- TSK
-- TSK
+- Dynamically add and render a list of elements using JavaScript
+- Create an overlay that shows and hides on a specific elements focus state
+- Utilize LocalStorage to persist the state of an application
+- Dynamically delete an item from a list using an index number
+- Fetch data from an API in vanilla JavaScript
 
 ---
 
