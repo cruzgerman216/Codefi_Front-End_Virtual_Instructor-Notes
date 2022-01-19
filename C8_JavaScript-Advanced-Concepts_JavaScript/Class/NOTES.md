@@ -368,6 +368,10 @@ Specifically, we learned how to:
 
 [TSK _(Article)_](tsk)
 
+<!-- - [Modern JS Cheatsheet](https://mbeaudru.github.io/modern-js-cheatsheet/) **- (ARTICLE/RESOURCE)**
+
+- [What the Heck is the Event Loop Anyway?](https://www.youtube.com/watch?v=8aGhZQkoFbQ&ab_channel=JSConf) - (**VIDEO)** -->
+
 ---
 
 ---

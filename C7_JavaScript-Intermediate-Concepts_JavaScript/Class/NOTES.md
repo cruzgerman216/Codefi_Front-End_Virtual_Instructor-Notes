@@ -18,9 +18,9 @@ By the end of this lesson, you will be able to:
 
 ### CONCEPTS
 
-- **Closures:** _Closures_ are a combinations of functions bundled together that have references to their surrounding state. A closure gives you access to an outer function’s scope from an inner function, outside of its original usage.
+- **Closures:** _Closures_ are a combinations of functions bundled together that have references to their surrounding state. A closure gives you access to an outer function’s scope from an inner function. Closures are extremely useful in cases where you want to use data encapsulation, create higher-order functions, or built-in JavaScript methods like `.map()` or `.filter()`.
 
-- **this:** The _this_ keyword in JavaScript is notorious for being difficult to explain. It ("this") refers to tsk
+- **this:** The _this_ keyword in JavaScript is notorious for being difficult to explain. It ("this") refers to different things depending on it's execution context.
 
 ---
 
@@ -34,57 +34,124 @@ By the end of this lesson, you will be able to:
 
 | _./closures.js_ |
 
-- [ ] **TSK**
+- [ ] **Brief Introduction on Demo 1**
+  - Declare a variable inside a function
+  - Create a function inside that function that prints the variable to the console
+  - In the first function, call the inner function
+  - In the global scope, call the outer function
 
 ```jsx
+function outer() {
+  let myVariable = "Outer Function Scoped Variable";
 
+  function inner() {
+    console.log("myVariable inside inner function:", myVariable);
+  }
+
+  inner();
+}
+
+outer(); // Prints: myVariable inside inner function: Outer Function Scoped Variable
 ```
 
 🔻
 
-- [ ] **TSK**
+- [ ] **Walkthrough Full Code for Demo 1**
+  - Save the output of the outer function, which calls the inner function in a variable
+  - Call the variable and check the console
 
 ```jsx
+// ~ DEMO 1 START ~ \\
+function outer() {
+  let myVariable = "Outer Function Scoped Variable";
 
+  function inner() {
+    console.log("myVariable inside inner function:", myVariable);
+  }
+
+  return inner;
+}
+
+const outerFunctionCall = outer();
+
+outerFunctionCall(); // Prints: myVariable inside inner function: Outer Function Scoped Variable
+// ~ DEMO 1 END ~ \\
 ```
 
 🔻
 
-- [ ] **TSK**
+- [ ] **Walkthrough Demo 2**
+  - Create a `greeting` function that returns another function which takes in a second parameter
+  - Create a variable that calls the greeting function passing in a generic greeting
+  - Call the variable passing in the name (used for the second parameter callback function)
+  - Test again
 
 ```jsx
-// TSK
+// ~ DEMO 2 START ~ \\
+function greeting(greeting) {
+  return function (name) {
+    return `${name}! ${greeting}`;
+  };
+}
+
+const basicWelcome = greeting("Welcome.");
+const friendlyWelcome = greeting("So glad to see you again!");
+
+console.log("basicWelcome:", basicWelcome("John"));
+console.log("friendlyWelcome:", friendlyWelcome("John"));
+// ~ DEMO 2 END ~ \\
 ```
 
 🔻
 
-- [ ] **TSK**
+- [ ] **Walkthrough Demo 3**
+  - Create a `createBankAccount` function that takes in an initial balance and declares it in the main function scope
+  - Return an object of methods that use this variable
+  - Create a variable with an initial value
+  - Use that varaible and call methods on it to add functionality
+  - Print the results
 
 ```jsx
-// TSK
-```
+// ~ DEMO 3 START ~ \\
+const createBankAccount = (initialBalance) => {
+  let userBalance = initialBalance;
 
-🔻
+  return {
+    getBalance: function () {
+      return userBalance;
+    },
+    deposit: function (amount) {
+      userBalance += amount;
+      return userBalance;
+    },
+    withdrawl: function (amount) {
+      userBalance -= amount;
+      return userBalance;
+    },
+  };
+};
 
-- [ ] **TSK**
+const myAccount = createBankAccount(100);
+let myBalance;
 
-```jsx
-// TSK
-```
+myBalance = myAccount.getBalance(); // 100
+console.log("myBalance after creation:", myBalance);
 
-🔻
+myAccount.deposit(99);
+myBalance = myAccount.getBalance(); // 100
+console.log("myBalance after $99 deposit:", myBalance);
 
-- [ ] **TSK**
-
-```jsx
-// TSK
+myAccount.withdrawl(12);
+myBalance = myAccount.getBalance(); // 100
+console.log("myBalance after $12 withdrawl:", myBalance);
+// ~ DEMO 3 END ~ \\
 ```
 
 🔻
 
 **Check**: Ensure your understanding of JS Closures
 
-- TSK
+- What is a closure and why would we want to use them?
 
 ---
 
@@ -94,50 +161,64 @@ By the end of this lesson, you will be able to:
 
 | _./objects-and-arrays.js_ |
 
-- [ ] **TSK**
+- [ ] **Walkthrough Creating an Object Example**
 
 ```jsx
+// ~ OBJECTS ~ \\
+// Objects stores data grouped together using key/value pairs
 
+// Object Example
+const myObj = {
+  key: "Value",
+  nestedInfo: {
+    nestedKey: "Nested Value",
+    age: 42,
+    location: {
+      state: {
+        name: "Missouri",
+        initials: "MO",
+      },
+    },
+  },
+  createdAt: new Date(),
+  someMethod: function (text = "Hello") {
+    console.log(text);
+  },
+};
 ```
 
 🔻
 
-- [ ] **TSK**
+- [ ] **Walkthrough How to Use an Object**
+  - Show how to access a property on an object
+  - Show how to call a method on an object
 
 ```jsx
+// Object Property Usage
+const bestState = myObj.nestedInfo.location.state.name;
+console.log("bestState:", bestState);
 
+const whenWasThisObjCreated = myObj["createdAt"];
+console.log("whenWasThisObjCreated:", whenWasThisObjCreated);
+
+// Object Method Usage
+myObj.someMethod(
+  "Calling a method on an object . . . these are the same thing as functions but inside an object"
+);
 ```
 
 🔻
 
-- [ ] **TSK**
+- [ ] **Walkthrough Object Constructors**
 
 ```jsx
-// TSK
-```
+// Object Constructors
+const student = new Object();
 
-🔻
+student.learning = "JavaScript";
+student.name = "Missy";
 
-- [ ] **TSK**
-
-```jsx
-// TSK
-```
-
-🔻
-
-- [ ] **TSK**
-
-```jsx
-// TSK
-```
-
-🔻
-
-- [ ] **TSK**
-
-```jsx
-// TSK
+console.log("student:", student);
 ```
 
 🔻
@@ -154,57 +235,101 @@ By the end of this lesson, you will be able to:
 
 | _./objects-and-arrays.js_ |
 
-- [ ] **TSK**
+- [ ] **Walkthrough Creating an Array Example**
 
 ```jsx
+// ~ ARRAYS ~ \\
+// Arrays stores information in a list-like format
 
+// Array Example
+const myArr = [1, "Test", false, { name: "Chris", age: 33 }];
 ```
 
 🔻
 
-- [ ] **TSK**
+- [ ] **Walkthrough Accessing Arrays**
 
 ```jsx
+// Accessing Arrays
+let firstItem = myArr[0];
+console.log("firstItem:", firstItem);
 
+let lastItem = myArr[myArr.length - 1];
+console.log("lastItem:", lastItem);
 ```
 
 🔻
 
-- [ ] **TSK**
+- [ ] **Walkthrough Using the Array Constructor**
 
 ```jsx
-// TSK
+// Array Constructor
+const myArr2 = new Array("item 1", "item 2", "item 3");
+console.log("myArr2:", myArr2);
+
+const myEmptyArr = new Array(100);
+console.log("myEmptyArr:", myEmptyArr);
 ```
 
 🔻
 
-- [ ] **TSK**
+- [ ] **Walkthrough Common Array Methods**
+  - Filter
+  - Map
+  - Sort
+  - Find
+  - ForEach
+  - Some
+  - Every
 
 ```jsx
-// TSK
-```
+// ~ Common Array Methods ~ \\
+const students = [
+  { name: "Medina", grade: 88 },
+  { name: "Blake", grade: 72 },
+  { name: "Roscoe", grade: 58 },
+  { name: "Stephanie", grade: 99 },
+  { name: "Edith", grade: 93 },
+  { name: "Janey", grade: 34 },
+  { name: "Ivan", grade: 89 },
+];
 
-🔻
+// filter
+const passingStudents = students.filter((student) => student.grade > 58);
+console.log("passingStudents:", passingStudents);
 
-- [ ] **TSK**
+// map
+students.map((student) => (student.isRegistered = true));
+console.log("students after being registered:", students);
 
-```jsx
-// TSK
-```
+// sort
+const studentsByGrade = students.sort((a, b) => b.grade - a.grade);
+console.log("studentsByGrade:", studentsByGrade);
 
-🔻
+// find
+const classClown = students.find((student) => student.name === "Roscoe");
+console.log("classClown:", classClown);
 
-- [ ] **TSK**
+// forEach
+students.forEach((student) => student.grade++);
+console.log("students w/ added grade point:", students);
 
-```jsx
-// TSK
+// some
+const hasAnyFailingStudents = students.some((student) => student.grade < 59);
+console.log("hasAnyFailingStudents (some):", hasAnyFailingStudents);
+
+// every
+const hasAllFailingStudents = students.every((student) => student.grade < 59);
+console.log("hasAllFailingStudents (every):", hasAllFailingStudents);
 ```
 
 🔻
 
 **Check**: Ensure your understanding of JavaScript Arrays
 
-- TSK
+- How do you access the first item in an array? How about the last?
+- How would you create an array with 9 empty spaces?
+- What array method would you use to check if at least one element in an array meets a certain condition?
 
 ---
 
@@ -214,57 +339,71 @@ By the end of this lesson, you will be able to:
 
 | _./this-keyword.js_ |
 
-- [ ] **TSK**
+- [ ] **Walkthrough Global Binding**
 
 ```jsx
-
+// ~ Global Binding (Default) ~ //
+console.log("'this' in Global Scope:", this);
 ```
 
 🔻
 
-- [ ] **TSK**
+- [ ] **Walkthrough Implicit Binding**
 
 ```jsx
+// ~ Implicit Binding ~ //
+const classroom = {
+  name: "High Five",
+  students: ["Valory", "Zane", "Ipsum"],
+  printStudents: function () {
+    console.log("'this' in Implicit Scope (Function Dec):", this.students);
+  },
+  printStudentsES6: () =>
+    console.log("'this' in Implicit Scope (ES6):", this.students), // 'this' refers to the global window object here
+};
 
+classroom.printStudents();
+classroom.printStudentsES6();
 ```
 
 🔻
 
-- [ ] **TSK**
+- [ ] **Walkthrough Explicit Binding**
 
 ```jsx
-// TSK
+// ~ Explicit Binding ~ //
+const getName = function () {
+  console.log("'this' in Explicit Scope:", this.name);
+};
+
+const player = {
+  name: "Borgov",
+  isHappy: false,
+};
+
+getName.call(player);
 ```
 
 🔻
 
-- [ ] **TSK**
+- [ ] **Walkthrough Constructor Binding**
 
 ```jsx
-// TSK
-```
+// ~ Constructor Binding ~ //
+function Company(name) {
+  this.name = name;
+}
 
-🔻
-
-- [ ] **TSK**
-
-```jsx
-// TSK
-```
-
-🔻
-
-- [ ] **TSK**
-
-```jsx
-// TSK
+const codefi = new Company("Codefi");
+console.log("'this' in Constructor Scope:", codefi.name);
 ```
 
 🔻
 
 **Check**: Ensure your understanding of the JavaScript "_this_" keyword
 
-- TSK
+- What does the 'this' keyword point to in the global scope?
+- When using implicit binding, what style of function do you want to use to make sure 'this' is set to the objects instance rather than the global window object?
 
 ---
 
@@ -292,9 +431,9 @@ Specifically, we learned how to:
 
 ### RESOURCES
 
-[TSK _(Tool)_](tsk)
+[Array Method Explorer _(Tool)_](https://codepen.io/sdras/pen/gogVRX)
 
-[TSK _(Video)_](tsk)
+[8 Must Know JavaScript Array Methods _(Video)_](https://www.youtube.com/watch?v=R8rmfD9Y5-c&ab_channel=WebDevSimplified)
 
 [TSK _(Article)_](tsk)
 
