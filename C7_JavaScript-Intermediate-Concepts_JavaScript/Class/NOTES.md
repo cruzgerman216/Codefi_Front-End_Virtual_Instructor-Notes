@@ -18,9 +18,9 @@ By the end of this lesson, you will be able to:
 
 ### CONCEPTS
 
-- **Closures:** _Closures_ are a combinations of functions bundled together that have references to their surrounding state. A closure gives you access to an outer function’s scope from an inner function. Closures are extremely useful in cases where you want to use data encapsulation, create higher-order functions, or built-in JavaScript methods like `.map()` or `.filter()`.
+- **Closures:** A _Closure_ is a reference to the local scope when code has been executed out of the surrounding state. A closure gives you access to an outer function’s scope from an inner function. Closures are handy in cases where you want to use data encapsulation, create higher-order functions or built-in JavaScript methods like `.map()` or `.filter()`.
 
-- **this:** The _this_ keyword in JavaScript is notorious for being difficult to explain. It ("this") refers to different things depending on it's execution context.
+- **this:** The _this_ keyword in JavaScript is notorious for being difficult to explain. It ("this") refers to different things depending on its execution context.
 
 ---
 
@@ -108,7 +108,7 @@ console.log("friendlyWelcome:", friendlyWelcome("John"));
   - Create a `createBankAccount` function that takes in an initial balance and declares it in the main function scope
   - Return an object of methods that use this variable
   - Create a variable with an initial value
-  - Use that varaible and call methods on it to add functionality
+  - Use that variable and call methods on it to add functionality
   - Print the results
 
 ```jsx
@@ -151,7 +151,7 @@ console.log("myBalance after $12 withdrawl:", myBalance);
 
 **Check**: Ensure your understanding of JS Closures
 
-- What is a closure and why would we want to use them?
+- What is a closure, and why would we want to use them?
 
 ---
 
@@ -328,8 +328,8 @@ console.log("hasAllFailingStudents (every):", hasAllFailingStudents);
 **Check**: Ensure your understanding of JavaScript Arrays
 
 - How do you access the first item in an array? How about the last?
-- How would you create an array with 9 empty spaces?
-- What array method would you use to check if at least one element in an array meets a certain condition?
+- How would you create an array with nine empty spaces?
+- What array method would you use to check if at least one element in an array meets a particular condition?
 
 ---
 
@@ -403,7 +403,7 @@ console.log("'this' in Constructor Scope:", codefi.name);
 **Check**: Ensure your understanding of the JavaScript "_this_" keyword
 
 - What does the 'this' keyword point to in the global scope?
-- When using implicit binding, what style of function do you want to use to make sure 'this' is set to the objects instance rather than the global window object?
+- When using implicit binding, what style of function do you want to use to ensure 'this' refers to the object's instance rather than the global window object?
 
 ---
 
