@@ -20,7 +20,7 @@ By the end of this lesson, you will be able to:
 **Class 2: JavaScript Foundations 1**
 ![Class 2: JavaScript Foundations 1](../Resources/C2_Finished-Project.png)
 
-**Class 2: JavaScript Foundations 2**
+**Class 3: JavaScript Foundations 2**
 ![Class 3: JavaScript Foundations 2](../Resources/C3_Finished-Project.png)
 
 **Class 4: JavaScript DOM**

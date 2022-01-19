@@ -13,6 +13,8 @@ By the end of this lesson, you will be able to:
 3. **Create comparisons between variables**
 4. **Create conditional flows and loops**
 
+---
+
 ![Class 2 Finished Product Terminal Window](../Resources/C2_Finished-Project.png)
 
 ---

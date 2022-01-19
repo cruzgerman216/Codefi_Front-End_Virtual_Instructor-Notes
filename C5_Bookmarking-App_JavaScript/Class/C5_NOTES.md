@@ -1,6 +1,8 @@
 # Bookmarking App
 
-[Class 5 Course Content](tsk)
+[Class 5 Course Content](https://www.better.dev/floating-input)
+
+[View Class 5 Project Online Here](https://codefi-bootcamp-class-5.netlify.app/)
 
 ## Preparation
 
@@ -12,7 +14,10 @@ By the end of this lesson, you will be able to:
 2. **Utilize Local Storage**
 3. **Fetch Data from an API**
 
-![TSK finished project](../Resources/TSK)
+---
+
+**JavaScript Bookmark Application**
+![Class 5: JavaScript Bookmark Application](../Resources/C5_Bookmark-App.png)
 
 ---
 
@@ -761,11 +766,7 @@ Specifically, we learned how to:
 
 ### RESOURCES
 
-[TSK _(Tool)_](tsk)
-
-[TSK _(Video)_](tsk)
-
-[TSK _(Article)_](tsk)
+[localStorage in JavaScript: A complete guide _(Article)_](https://blog.logrocket.com/localstorage-javascript-complete-guide/)
 
 ---
 

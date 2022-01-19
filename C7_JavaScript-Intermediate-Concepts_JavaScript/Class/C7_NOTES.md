@@ -12,7 +12,10 @@ By the end of this lesson, you will be able to:
 2. **Master JS Objects & Arrays & Use Common Object/Array Methods**
 3. **Tolerate the "this" Keyword**
 
-![TSK finished project](../Resources/TSK)
+---
+
+**JavaScript Intermediate Concepts**
+![Class 7: JavaScript Intermediate Concepts](../Resources/C7_JS-Intermediate-Concepts.png)
 
 ---
 
@@ -225,7 +228,8 @@ console.log("student:", student);
 
 **Check**: Ensure your understanding of JS Objects
 
-- TSK
+- Can an object store multiple different data-types?
+- What are the two ways you can select a property on an object?
 
 ---
 
@@ -434,8 +438,6 @@ Specifically, we learned how to:
 [Array Method Explorer _(Tool)_](https://codepen.io/sdras/pen/gogVRX)
 
 [8 Must Know JavaScript Array Methods _(Video)_](https://www.youtube.com/watch?v=R8rmfD9Y5-c&ab_channel=WebDevSimplified)
-
-[TSK _(Article)_](tsk)
 
 ---
 

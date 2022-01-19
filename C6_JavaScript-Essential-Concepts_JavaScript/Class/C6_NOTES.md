@@ -13,7 +13,10 @@ By the end of this lesson, you will be able to:
 3. **Use JavaScript Scope Properly**
 4. **Apply Hoisting Correctly in a JS Project**
 
-![TSK finished project](../Resources/TSK)
+---
+
+**JavaScript Essential Concepts**
+![Class 6: JavaScript Essential Concepts](../Resources/C6_JS-Essential-Concepts.png)
 
 ---
 
@@ -296,11 +299,7 @@ Specifically, we learned how to:
 
 ### RESOURCES
 
-[TSK _(Tool)_](tsk)
-
-[TSK _(Video)_](tsk)
-
-[TSK _(Repository)_](https://github.com/ryanmcdermott/clean-code-javascript)
+[Clean Code JavaScript _(Repository)_](https://github.com/ryanmcdermott/clean-code-javascript)
 
 ---
 

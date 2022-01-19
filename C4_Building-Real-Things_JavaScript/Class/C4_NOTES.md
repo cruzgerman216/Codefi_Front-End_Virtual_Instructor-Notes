@@ -2,6 +2,8 @@
 
 [Class 4 Course Content](https://www.better.dev/javascript-dom-and-dom-events)
 
+[View Class 4 Projects Online Here](https://codefi-bootcamp-class-4.netlify.app/)
+
 ## Preparation
 
 ### GOALS
@@ -14,15 +16,33 @@ By the end of this lesson, you will be able to:
 4. **Make a JS Stopwatch**
 5. **Build a Pricing Calculator**
 
-![TSK finished project](../Resources/TSK)
+---
+
+**JavaScript DOM**
+![Class 4: JavaScript DOM](../Resources/C4_DOM.png)
+
+**JavaScript Pricing Calculator**
+![Class 4: JavaScript Pricing Calculator](../Resources/C4_Pricing-Calc.png)
+
+**JavaScript Crazy Buttons**
+![Class 4: JavaScript Crazy Buttons](../Resources/C4_Crazy-Buttons.png)
+
+**JavaScript Stopwatch**
+![Class 4: JavaScript Stopwatch](../Resources/C4_Stopwatch.png)
+
+**JavaScript Accordion Menu**
+![Class 4: JavaScript Accordion Menu](../Resources/C4_Accordion.png)
+
+**JavaScript Scrolling Progress**
+![Class 4: JavaScript Scrolling Progress](../Resources/C4_Scrolling-Progress.png)
 
 ---
 
 ### CONCEPTS
 
-- **DOM:** The _DOM_ or _Document Object Model_ is tsk
+- **DOM:** The _DOM_ or _Document Object Model_ is a built-in HTML API that defines teh document's logical structure in object format for easily creating or manipulating elements
 
-- **Event Listener:** An _event listener_ is tsk
+- **Event Listener:** An _event listener_ is an interface for an object that can dispatch event methods on an "EventTarget" object
 
 ---
 
@@ -846,11 +866,7 @@ Specifically, we learned how to:
 
 ### RESOURCES
 
-[TSK _(Tool)_](tsk)
-
-[TSK _(Video)_](tsk)
-
-[TSK _(Article)_](tsk)
+[Vanilla JavaScript Quick Reference / Cheatsheet _(Repository)_](https://gist.github.com/thegitfather/9c9f1a927cd57df14a59c268f118ce86)
 
 ---
 

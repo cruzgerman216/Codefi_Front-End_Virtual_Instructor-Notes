@@ -12,6 +12,8 @@ By the end of this lesson, you will be able to:
 2. **Create JS Objects**
 3. **Grasp Common JS Built-in Objects & Methods**
 
+---
+
 ![Class 3 Finished Product Terminal Window](../Resources/C3_Finished-Project.png)
 
 ---

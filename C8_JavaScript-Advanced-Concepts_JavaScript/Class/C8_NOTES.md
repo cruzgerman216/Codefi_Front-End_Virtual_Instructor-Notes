@@ -14,7 +14,10 @@ By the end of this lesson, you will be able to:
 4. **Grasp Memoization**
 5. **Distinguish and Implement the Spread & Rest Operators**
 
-![TSK finished project](../Resources/TSK)
+---
+
+**JavaScript Advanced Concepts**
+![Class 8: JavaScript Advanced Concepts](../Resources/C8_JS-Advanced-Concepts.png)
 
 ---
 
