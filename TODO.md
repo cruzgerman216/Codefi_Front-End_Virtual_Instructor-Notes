@@ -1,6 +1,3 @@
 - [ ] Put Finshed Projects in Class 1 Part 1 Notes.
 - [ ] Create PDF's
-- [ ] [Grammarly Check](https://app.grammarly.com/ddocs/1437237792)
 - [ ] Exercises
-- [ ] Practice pushing the code up to GitHub with them from class 6 onward!
-- [ ] Classes 6, 7, 8 should be exercise heavy!!

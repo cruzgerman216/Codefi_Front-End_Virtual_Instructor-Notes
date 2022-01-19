@@ -12,11 +12,50 @@ By the end of this lesson, you will be able to:
 2. **Setup our tools and developer environment**
 3. **Build our first JavaScript project**
 
-![JavaScript Hello World](../Resources/Hello-World_Finished.png)
+---
+
+**Class 1: JavaScript Hello World**
+![Class 1: JavaScript Hello World](../Resources/Hello-World_Finished.png)
+
+**Class 2: JavaScript Foundations 1**
+![Class 2: JavaScript Foundations 1](../Resources/C2_Finished-Project.png)
+
+**Class 2: JavaScript Foundations 2**
+![Class 3: JavaScript Foundations 2](../Resources/C3_Finished-Project.png)
+
+**Class 4: JavaScript DOM**
+![Class 4: JavaScript DOM](../Resources/C4_DOM.png)
+
+**Class 4: JavaScript Pricing Calculator**
+![Class 4: JavaScript Pricing Calculator](../Resources/C4_Pricing-Calc.png)
+
+**Class 4: JavaScript Crazy Buttons**
+![Class 4: JavaScript Crazy Buttons](../Resources/C4_Crazy-Buttons.png)
+
+**Class 4: JavaScript Stopwatch**
+![Class 4: JavaScript Stopwatch](../Resources/C4_Stopwatch.png)
+
+**Class 4: JavaScript Accordion Menu**
+![Class 4: JavaScript Accordion Menu](../Resources/C4_Accordion.png)
+
+**Class 4: JavaScript Scrolling Progress**
+![Class 4: JavaScript Scrolling Progress](../Resources/C4_Scrolling-Progress.png)
+
+**Class 5: JavaScript Bookmark Application**
+![Class 5: JavaScript Bookmark Application](../Resources/C5_Bookmark-App.png)
+
+**Class 6: JavaScript Essential Concepts**
+![Class 6: JavaScript Essential Concepts](../Resources/C6_JS-Essential-Concepts.png)
+
+**Class 7: JavaScript Intermediate Concepts**
+![Class 7: JavaScript Intermediate Concepts](../Resources/C7_JS-Intermediate-Concepts.png)
+
+**Class 8: JavaScript Advanced Concepts**
+![Class 8: JavaScript Advanced Concepts](../Resources/C8_JS-Advanced-Concepts.png)
 
 ---
 
-### CONCEPTS
+### TERMINOLOGY
 
 - **JavaScript:** _JavaScript_ is one of the core programming languages of the Web. Over 97% of websites use JavaScript to add interactivity and functionality to their page. You can use JavaScript to build interactive websites, mobile apps, backend APIs, desktop applications, and even machine learning projects!
 
@@ -34,11 +73,15 @@ By the end of this lesson, you will be able to:
 
 🔻
 
-| _https://codefi-bootcamp-projects.netlify.com_ |
+| _https://codefi-bootcamp-class-4.netlify.app/_ |
 
-- [ ] **Walkthrough Project 1**
-- [ ] **Walkthrough Project 2**
-- [ ] **Walkthrough Project 3**
+- [ ] **Walkthrough Class 4 Projects**
+  - [View Class 4 Projects Online Here](https://codefi-bootcamp-class-4.netlify.app/)
+
+| _https://codefi-bootcamp-class-5.netlify.app/_ |
+
+- [ ] **Walkthrough Class 5 Project**
+  - [View Class 5 Project Online Here](https://codefi-bootcamp-class-5.netlify.app/)
 
 ---
 
