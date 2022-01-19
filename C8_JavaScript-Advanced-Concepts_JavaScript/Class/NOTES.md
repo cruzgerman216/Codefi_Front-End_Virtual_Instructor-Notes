@@ -20,17 +20,17 @@ By the end of this lesson, you will be able to:
 
 ### CONCEPTS
 
-- **Design Pattern:** A _design pattern_ is a blueprint and a set of best-practices on how to solve a problem and structure your application in sofware engineering project.
+- **Design Pattern:** A _design pattern_ is a blueprint and a set of best practices on how to solve a problem and structure your application in a software engineering project.
 
-Three three types of design patterns are **creation patterns** (ways to create objects), **structural patterns** (ways to manage relationships between objects), and **behavioral patterns** (interactions between objects).
+The three types of design patterns are **creation patterns** (ways to create objects), **structural patterns** (ways to manage relationships between objects), and **behavioral patterns** (interactions between objects).
 
-- **Asynchronous Code:** _Asynchronous code_ is a programming model where operations take place in non-sequential fashion.
+- **Asynchronous Code:** _Asynchronous code_ is a programming model where operations occur in a non-sequential fashion.
 
 - **Memoization:** _Memoization_ is an optimization technique used primarily to speed up computer programs by storing the results of expensive function calls and returning the cached result when the same inputs are given.
 
-- **Spread Operator:** The _spread operator_ is a way to expand iteratbles (arrays, objects, and strings) into a signle arguments _spread_ across one by one.
+- **Spread Operator:** The _spread operator_ is a way to expand iterates (arrays, objects, and strings) into a single argument _spread_ across one by one.
 
-- **Rest Operator:** The _rest operator_ is a way to collect all remaining elements in an array or arguments on a function call.
+- **Rest Operator:** The _rest operator_ is a way to collect all remaining elements in an array of arguments on a function call.
 
 ---
 
@@ -50,7 +50,7 @@ Three three types of design patterns are **creation patterns** (ways to create o
   - This is a _creational_ pattern
   - This pattern is where all the module code exists inside a closure
   - It is often expressed as an IIFE or Immediately-Invoked-Function-Expression
-  - They are useful in systems that exceed single function use, to keep your global namespace clean, and to ensure cleaner architechture for importing and exporting funcitons
+  - They are helpful in systems that exceed single function use, to keep your global namespace clean, and to ensure cleaner architecture for importing and exporting functions
 
 ```jsx
 // Module Pattern Demo Start \\
@@ -85,9 +85,9 @@ console.log("currCount after reset:", currCount);
 
 - [ ] **Walkthrough Builder Design Pattern Demo**
   - This is a _creational_ pattern
-  - This pattern lets us construct objects without having to explicitly code the object
+  - This pattern lets us construct objects without having to code the object explicitly
   - To make this pattern work, specify a type and content of an object that JavaScript recognizes
-  - The purpose is to seperate the objects construction from it's representation to make creating common objects easier and more efficient
+  - The purpose is to separate the construction of the object from it's representation to make creating common objects easier and more efficient
 
 ```jsx
 // Builder Pattern Demo Start \\
@@ -140,7 +140,7 @@ console.groupEnd();
 - [ ] **Walkthrough Facade Design Pattern Demo**
   - This is a _structural_ pattern
   - This pattern comes to play when an internal subroutine is hidden and invoked by another function without being exposed (as in a facade)
-  - The purpose is to conceil or protect a larger piece of logic under a single function call that never exposes its internal workings to other developers
+  - The purpose is to conceal or protect a larger piece of logic under a single function call that never exposes its internal workings to other developers
 
 ```jsx
 // Facade Pattern Demo Start \\
@@ -203,7 +203,7 @@ console.groupEnd();
 
 - [ ] **Walkthrough Composite Design Pattern Demo**
   - This is a _structrual_ pattern
-  - This pattern is where objects are composed of multiple parts to create a single entitiy that in turn, becomes the access point for all the parts
+  - This pattern is where objects are composed of multiple parts to create a single entity that, in turn, becomes the access point for all the parts
 
 ```jsx
 // Composites Pattern Demo Start \\
@@ -265,7 +265,7 @@ console.groupEnd();
 - [ ] **Walkthrough Observer Design Pattern Demo**
   - This is a _behavioral_ pattern
   - This pattern entails creating a single object that references a collection of objects and emits notifications when a state change occurs
-  - This is good for decoupling objects, promotes smaller more reusable components, and helps develpoepsr pinpoint dependencies and form a better mental model of how all components work together
+  - This is good for decoupling objects, promotes smaller, more reusable components, and helps developers pinpoint dependencies and form a better mental model of how all components work together
   - Later on in the Angular portion, we will often make use of the `.subscribe()` method, which implements the _observer_ pattern
 
 ```html
@@ -419,7 +419,7 @@ getDetails
 
 **Aim**: Master the fundamentals of JavaScript Async / Await
 
-- ASYNC FUNTIONS ALWAYS RETURN A PROMISE
+- ASYNC FUNCTIONS ALWAYS RETURN A PROMISE
 
 | _./async-await.js_ |
 
@@ -553,7 +553,7 @@ console.groupEnd();
 
 ### STEP 5: SPREAD VS. REST
 
-**Aim**: Comprehend the differences of JavaScript Spread vs Rest
+**Aim**: Comprehend the differences of JavaScript Spread vs. Rest
 
 | _./spread-vs-rest.js_ |
 
@@ -596,7 +596,7 @@ console.groupEnd();
 
 🔻
 
-**Check**: Ensure your understanding of JavaScript Spread Operator and it's difference to the JavaScript Rest Operator
+**Check**: Ensure your understanding of JavaScript Spread Operator, and its difference to the JavaScript Rest Operator
 
 - What is the difference between the _spread_ and _rest_ operators?
 - Can you think of a few real-world use cases for each?
