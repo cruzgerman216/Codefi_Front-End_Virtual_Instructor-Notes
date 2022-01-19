@@ -326,7 +326,10 @@ blogPost.addEventListener("keyup", () =>
 
 **Check**: Ensure your understanding of JavaScript Design Patterns
 
-- TSK
+- What are the three types of design patterns?
+- When would you use the _Facade_ pattern?
+- What pattern is often expressed as an IIFE? What does IIFE stand for?
+- What is the _Observer_ Design Pattern?
 
 ---
 
@@ -336,57 +339,79 @@ blogPost.addEventListener("keyup", () =>
 
 | _./callbacks-and-promises.js_ |
 
-- [ ] **TSK**
+- [ ] **Walkthrough Synchronous Coding**
 
 ```jsx
+// ~~~~~ SYNCHRONOUS CODING ~~~~~ \\
+function goToSchool() {
+  console.log("THE BUS! Welp, I missed the bus!");
+}
+function code() {
+  console.log("Coded all day successfully!");
+}
 
+// Usage:
+console.groupCollapsed("Synchronous Coding");
+goToSchool();
+code();
+console.groupEnd();
 ```
 
 🔻
 
-- [ ] **TSK**
+- [ ] **Walkthrough Using Callbacks**
 
 ```jsx
+// ~~~~~ CALLBACKS ~~~~~ \\
+function growCorn() {
+  setTimeout(() => {
+    console.log("Corn Success");
+  }, 3000);
+}
+function PickApple() {
+  console.log("Apple Success");
+}
 
+// Usage:
+growCorn();
+PickApple();
 ```
 
 🔻
 
-- [ ] **TSK**
+- [ ] **Walkthrough Using Promises**
 
 ```jsx
-// TSK
-```
+// ~~~~~ PROMISES ~~~~~ \\
+const someAPIRequest = {
+  success: Math.random() < 0.5,
+  data: "Here is your data",
+};
+const getDetails = new Promise((resolve, reject) => {
+  if (someAPIRequest.success) {
+    resolve(someAPIRequest.data);
+  } else {
+    reject(new Error("API Request Failed. Try again."));
+  }
+});
 
-🔻
-
-- [ ] **TSK**
-
-```jsx
-// TSK
-```
-
-🔻
-
-- [ ] **TSK**
-
-```jsx
-// TSK
-```
-
-🔻
-
-- [ ] **TSK**
-
-```jsx
-// TSK
+// Usage:
+getDetails
+  .then((done) => {
+    console.log("done:", done);
+  })
+  .catch((err) => {
+    console.log("err:", err);
+  });
 ```
 
 🔻
 
 **Check**: Ensure your understanding of JavaScript Callbacks & Promises
 
-- TSK
+- Is there a difference between a callback and a promise?
+- What are some examples of built-in JavaScript callbacks?
+- How do you add error handling to a promise?
 
 ---
 
@@ -398,57 +423,45 @@ blogPost.addEventListener("keyup", () =>
 
 | _./async-await.js_ |
 
-- [ ] **TSK**
+- [ ] **Walkthrough Making an API Request Using Promises**
 
 ```jsx
+// ~~~~~ OLD WAY (PROMISES) ~~~~~ \\
+function getAllCommentsUsingPromises() {
+  const data = fetch("https://jsonplaceholder.typicode.com/comments")
+    .then((response) => response.json())
+    .then((json) => console.log("PROMISES:", json))
+    .catch((err) => console.log("err:", err));
+}
 
+getAllCommentsUsingPromises();
 ```
 
 🔻
 
-- [ ] **TSK**
+- [ ] **Walkthrough Making an API Request Using Promises**
 
 ```jsx
+// ~~~~~ NEW WAY (ASYNC/AWAIT) ~~~~~ \\
+async function getAllCommentsUsingAsyncAwait() {
+  try {
+    const data = await fetch("https://jsonplaceholder.typicode.com/comments");
+    const res = await data.json();
+    console.log("ASYNC/AWAIT:", res);
+  } catch (err) {
+    console.log("err:", err);
+  }
+}
 
-```
-
-🔻
-
-- [ ] **TSK**
-
-```jsx
-// TSK
-```
-
-🔻
-
-- [ ] **TSK**
-
-```jsx
-// TSK
-```
-
-🔻
-
-- [ ] **TSK**
-
-```jsx
-// TSK
-```
-
-🔻
-
-- [ ] **TSK**
-
-```jsx
-// TSK
+getAllCommentsUsingAsyncAwait();
 ```
 
 🔻
 
 **Check**: Ensure your understanding of JavaScript Async & Await
 
-- TSK
+- How do you perform error handling while using async / await?
+- What does an async function return?
 
 ---
 
@@ -458,57 +471,83 @@ blogPost.addEventListener("keyup", () =>
 
 | _./memoization.js_ |
 
-- [ ] **TSK**
+- [ ] **Walkthrough Fibonnaci Basics**
 
 ```jsx
+function fibonacci(n) {
+  // Base Case
+  if (n <= 2) return 1;
 
+  //   Recursive Function call
+  return fibonacci(n - 1) + fibonacci(n - 2);
+}
 ```
 
 🔻
 
-- [ ] **TSK**
+- [ ] **Walkthrough Fibonacci Memoized Demo**
 
 ```jsx
+// Memoized
+function memoizedFibonacci(n, memo) {
+  // Memoization Initialization
+  memo = memo || {};
 
+  // Memoization Call
+  if (memo[n]) return memo[n];
+
+  // Base Case
+  if (n <= 2) return 1;
+
+  //   Recursive Function call
+  return (memo[n] =
+    memoizedFibonacci(n - 1, memo) + memoizedFibonacci(n - 2, memo));
+}
+
+const TenthFibonacciNumber = memoizedFibonacci(10);
+console.log("TenthFibonacciNumber:", TenthFibonacciNumber);
 ```
 
 🔻
 
-- [ ] **TSK**
+- [ ] **Walkthrough Fibonacci HOF Demo**
 
 ```jsx
-// TSK
-```
+// ~~~~~~ MEMOIZED HOF ~~~~~~ \\
+function fibonacciRecursion(n) {
+  // Base Case
+  if (n <= 2) return 1;
 
-🔻
+  //   Recursive Function call
+  return fibonacciRecursion(n - 1) + fibonacciRecursion(n - 2);
+}
 
-- [ ] **TSK**
+function memoizer(fun) {
+  let cache = {};
 
-```jsx
-// TSK
-```
+  return function (n) {
+    if (cache[n] != undefined) {
+      return cache[n];
+    } else {
+      let result = fun(n);
+      cache[n] = result;
 
-🔻
+      return result;
+    }
+  };
+}
 
-- [ ] **TSK**
-
-```jsx
-// TSK
-```
-
-🔻
-
-- [ ] **TSK**
-
-```jsx
-// TSK
+const fibonacciMemoHOF = memoizer(fibonacciRecursion);
+console.log("fibonacciMemoHOF:", fibonacciMemoHOF(10));
+console.groupEnd();
 ```
 
 🔻
 
 **Check**: Ensure your understanding of JavaScript Memoization
 
-- TSK
+- What is memoization in your own words?
+- Should you memoize every function?
 
 ---
 
@@ -518,57 +557,49 @@ blogPost.addEventListener("keyup", () =>
 
 | _./spread-vs-rest.js_ |
 
-- [ ] **TSK**
+- [ ] **Walkthrough Using the REST Operator**
 
 ```jsx
+// ~~~~~~~ REST OPERATOR ~~~~~~~ \\
+console.groupCollapsed("Rest Operator");
 
+function sumOf(...args) {
+  console.log("args:", args);
+
+  let sum = 0;
+
+  args.forEach((arg) => (sum += arg));
+
+  return sum;
+}
+
+const testCalculation = sumOf(1, 2, 5, 8);
+
+console.log("testCalculation:", testCalculation);
+console.groupEnd();
 ```
 
 🔻
 
-- [ ] **TSK**
+- [ ] **Walkthrough Using the SPREAD Operator**
 
 ```jsx
+// ~~~~~~~ SPREAD OPERATOR ~~~~~~~ \\
+const ninthGraders = ["Jennify", "Berry", "Ashley", "Bernard"];
+const tenthGraders = ["Jason", "Amy", "Samuel", "Cook"];
+const completeListOfStudents = [...ninthGraders, ...tenthGraders];
 
-```
-
-🔻
-
-- [ ] **TSK**
-
-```jsx
-// TSK
-```
-
-🔻
-
-- [ ] **TSK**
-
-```jsx
-// TSK
-```
-
-🔻
-
-- [ ] **TSK**
-
-```jsx
-// TSK
-```
-
-🔻
-
-- [ ] **TSK**
-
-```jsx
-// TSK
+console.groupCollapsed("Spread Operator");
+console.log("completeListOfStudents:", completeListOfStudents);
+console.groupEnd();
 ```
 
 🔻
 
 **Check**: Ensure your understanding of JavaScript Spread Operator and it's difference to the JavaScript Rest Operator
 
-- TSK
+- What is the difference between the _spread_ and _rest_ operators?
+- Can you think of a few real-world use cases for each?
 
 ---
 
@@ -598,15 +629,13 @@ Specifically, we learned how to:
 
 ### RESOURCES
 
-[TSK _(Tool)_](tsk)
+[What the Heck is the Event Loop Anyway? _(Video)_](https://www.youtube.com/watch?v=8aGhZQkoFbQ&ab_channel=JSConf)
 
-[TSK _(Video)_](tsk)
+[The Async Await Episode I Promised _(Video)_](https://www.youtube.com/watch?v=vn3tm0quoqE)
 
-[TSK _(Article)_](tsk)
+[Design Patterns Playlist _(Video)_](https://www.youtube.com/playlist?list=PLZlA0Gpn_vH_CthENcPCM0Dww6a5XYC7f)
 
-<!-- - [Modern JS Cheatsheet](https://mbeaudru.github.io/modern-js-cheatsheet/) **- (ARTICLE/RESOURCE)**
-
-- [What the Heck is the Event Loop Anyway?](https://www.youtube.com/watch?v=8aGhZQkoFbQ&ab_channel=JSConf) - (**VIDEO)** -->
+[Modern JS Cheatsheet _(Article)_](https://mbeaudru.github.io/modern-js-cheatsheet/)
 
 ---
 
