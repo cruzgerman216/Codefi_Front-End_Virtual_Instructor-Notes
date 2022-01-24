@@ -1,6 +1,6 @@
 # Getting Started w/ JavaScript (Class 1)
 
-## Exercise #1
+## Exercise #1: Basic
 
 **Aim**: Create a new project (with only an HTML file) that uses JavaScript to change the color of a Heading element.
 
@@ -13,6 +13,6 @@
 
 ---
 
-## Exercise #2
+## Exercise #2: Advanced
 
 **Aim**: Create a new project (with an HTML and JavaScript) that uses JavaScript to change the color of a Heading element on button click.
