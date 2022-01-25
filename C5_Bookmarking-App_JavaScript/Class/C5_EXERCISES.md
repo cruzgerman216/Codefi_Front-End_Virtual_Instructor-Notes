@@ -1,15 +1,5 @@
-# TSK (Class TSK)
+# Bookmarking App (Class 5)
 
-## Exercise #1
+## Exercise #1: Intermediate
 
-**Aim**: TSK
-
-- [ ] TSK
-
----
-
----
-
-## Exercise #2
-
-**Aim**: TSK
+**Aim**: Create an application that prints out users information on submission of a form and saves the results to local storage
